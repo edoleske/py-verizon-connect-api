@@ -1,0 +1,25 @@
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "verizon-connect-api"
+description = "Helper class for Verizon Connect API"
+readme = "README.md"
+license = { text = "MIT" }
+version = "0.1.0"
+requires-python = ">=3.8"
+authors = [
+    {name = "Ethan O'Leske", email = "ethan.oleske@gmail.com"}
+]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+dependencies = [
+    "requests~=2.32"
+]
+
+[project.urls]
+Homepage = "https://github.com/edoleske/py-verizon-connect-api"
