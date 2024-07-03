@@ -3,7 +3,7 @@ requires = ["setuptools"]
 build-backend = "setuptools.build_meta"
 
 [project]
-name = "verizon-connect-api"
+name = "verizon_connect_api"
 description = "Helper class for Verizon Connect API"
 readme = "README.md"
 license = { text = "MIT" }
@@ -24,7 +24,9 @@ dependencies = [
 [project.optional-dependencies]
 dev = [
     "python-dotenv~=1.0",
-    "sphinx"
+    "sphinx",
+    "sphinx_rtd_theme",
+    "m2r"
 ]
 
 [project.urls]
