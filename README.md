@@ -33,7 +33,7 @@ except HTTPError as e:
 
 ## Resources
 
-Documentation: https://edoleske.github.com/py-verizon-connect-api
+Documentation: https://edoleske.github.io/py-verizon-connect-api
 
 Verizon Connect API Terms and Conditions: https://fim.us.fleetmatics.com/content/home/landing/eapaas_agreement.html
 
