@@ -10,7 +10,7 @@ from importlib.metadata import version
 project = 'verizon_connect_api'
 copyright = "2024, Ethan O'Leske"
 author = "Ethan O'Leske"
-version = release = version("verizon-connect-api")
+version = release = version("verizon_connect_api")
 
 # -- General configuration ---------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#general-configuration
