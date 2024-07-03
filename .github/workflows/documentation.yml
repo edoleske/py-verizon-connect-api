@@ -13,8 +13,7 @@ jobs:
       - uses: actions/setup-python@v5
       - name: Install dependencies
         run: |
-          pip install sphinx sphinx_rtd_theme sphinx_pyproject m2r 
-          pip install .
+          pip install sphinx sphinx_rtd_theme sphinx_pyproject m2r
       - name: Sphinx build
         run: |
           sphinx-build docs docs/_build
