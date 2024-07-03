@@ -8,6 +8,7 @@
 from sphinx_pyproject import SphinxConfig
 
 config = SphinxConfig("../pyproject.toml", globalns=globals())
+project = config.name
 
 # -- General configuration ---------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#general-configuration

@@ -3,7 +3,6 @@ requires = ["setuptools"]
 build-backend = "setuptools.build_meta"
 
 [project]
-project = "verizon_connect_api"
 name = "verizon_connect_api"
 description = "Helper class for Verizon Connect API"
 readme = "README.md"
