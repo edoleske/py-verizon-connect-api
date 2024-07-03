@@ -4,11 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2ac371c6-7e2d-40ad-9fc0-3256c4badc4e" name="Changes" comment="github action watches main">
-      <change beforePath="$PROJECT_DIR$/.idea/verizon-connect-api.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/verizon-connect-api.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/verizon_connect_api/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/verizon_connect_api/__init__.py" afterDir="false" />
-    </list>
+    <list default="true" id="2ac371c6-7e2d-40ad-9fc0-3256c4badc4e" name="Changes" comment="one more try" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -145,7 +141,7 @@
       <updated>1719943868114</updated>
       <workItem from="1719943873681" duration="18365000" />
       <workItem from="1720025017765" duration="7086000" />
-      <workItem from="1720033527142" duration="765000" />
+      <workItem from="1720033527142" duration="1221000" />
     </task>
     <task id="LOCAL-00001" summary="initial commit">
       <option name="closed" value="true" />
@@ -275,7 +271,23 @@
       <option name="project" value="LOCAL" />
       <updated>1720033125210</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="VerizonConnectAPI default import">
+      <option name="closed" value="true" />
+      <created>1720034414289</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1720034414289</updated>
+    </task>
+    <task id="LOCAL-00018" summary="one more try">
+      <option name="closed" value="true" />
+      <created>1720034635803</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1720034635803</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -297,7 +309,9 @@
     <MESSAGE value="looks like it's outdated pip..." />
     <MESSAGE value="dependency cleanup" />
     <MESSAGE value="github action watches main" />
-    <option name="LAST_COMMIT_MESSAGE" value="github action watches main" />
+    <MESSAGE value="VerizonConnectAPI default import" />
+    <MESSAGE value="one more try" />
+    <option name="LAST_COMMIT_MESSAGE" value="one more try" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/verizon_connect_api$.coverage" NAME=" Coverage Results" MODIFIED="1720024864920" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests" />

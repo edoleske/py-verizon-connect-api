@@ -6,6 +6,20 @@ the API will require registration of an app in their Developer Portal.
 
 This project is not associated in any way with Verizon or Verizon Connect.
 
+## Installation
+
+To install this package, use `pip` to install from this Github repository directly (Currently, this package has not been published to PyPi).
+
+```commandline
+pip install git+https://github.com/edoleske/py-verizon-connect-api@main
+```
+
+You can add this to a `requirements.txt` file with the `@` operator.
+
+```text
+verizon_connect_api @ git+https://github.com/edoleske/py-verizon-connect-api@main
+```
+
 ## Usage
 
 First, register an app with Verizon Connect through the 
