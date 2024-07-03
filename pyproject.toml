@@ -33,6 +33,7 @@ dev = [
 
 [project.urls]
 Homepage = "https://github.com/edoleske/py-verizon-connect-api"
+Documentation = "https://edoleske.github.com/py-verizon-connect-api"
 
 [tool.pytest.ini_options]
 pythonpath = "src"
