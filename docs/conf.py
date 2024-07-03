@@ -5,12 +5,9 @@
 
 # -- Project information -----------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#project-information
-from importlib.metadata import version
+from sphinx_pyproject import SphinxConfig
 
-project = 'verizon_connect_api'
-copyright = "2024, Ethan O'Leske"
-author = "Ethan O'Leske"
-version = release = version("verizon_connect_api")
+config = SphinxConfig("../pyproject.toml", globalns=globals())
 
 # -- General configuration ---------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#general-configuration
