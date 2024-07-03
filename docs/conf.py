@@ -1,3 +1,8 @@
+# This lets autodoc find the package in the github action environment
+import verizon_connect_api
+
+from sphinx_pyproject import SphinxConfig
+
 # Configuration file for the Sphinx documentation builder.
 #
 # For the full list of built-in configuration values, see the documentation:
@@ -5,7 +10,6 @@
 
 # -- Project information -----------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#project-information
-from sphinx_pyproject import SphinxConfig
 
 config = SphinxConfig("../pyproject.toml", globalns=globals())
 project = config.name
