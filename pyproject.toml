@@ -22,8 +22,10 @@ dependencies = [
 ]
 
 [project.optional-dependencies]
-dev = [
+test = [
     "python-dotenv~=1.0",
+]
+doc = [
     "sphinx",
     "sphinx_rtd_theme",
     "sphinx_pyproject",
