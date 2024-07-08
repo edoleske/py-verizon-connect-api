@@ -43,7 +43,7 @@ class VerizonConnectAPI:
             raise ValueError('Start datetime must be before end datetime')
 
         return self._json_request(
-            f"rad/v1/vehicles/{vehicle_number}/status/"
+            f"rad/v1/vehicles/{self._format_vehicle_number(vehicle_number)}/status/"
             f"history?startdatetimeutc={self._format_date(start)}&enddatetimeutc={self._format_date(end)}")
 
     def segment_data(self, vehicle_number: str, start: datetime):
@@ -51,25 +51,28 @@ class VerizonConnectAPI:
             raise ValueError('Start datetime cannot be in the future')
 
         return self._json_request(
-            f"rad/v1/vehicles/{vehicle_number}/segments?startdateutc={self._format_date(start)}")
+            f"rad/v1/vehicles/{self._format_vehicle_number(vehicle_number)}/"
+            f"segments?startdateutc={self._format_date(start)}")
 
     def vehicle_dtc_history(self, vehicle_number: str):
-        return self._json_request(f"rad/v1/vehicles/{vehicle_number}/getdtchistorybyvehiclenumber")
+        return self._json_request(f"rad/v1/vehicles/{self._format_vehicle_number(vehicle_number)}/"
+                                  f"getdtchistorybyvehiclenumber")
 
     def vehicle_ecm_status(self, vehicle_number: str):
-        return self._json_request(f"rad/v1/vehicles/{vehicle_number}/getecmstatusbyvehiclenumber")
+        return self._json_request(f"rad/v1/vehicles/{self._format_vehicle_number(vehicle_number)}/"
+                                  f"getecmstatusbyvehiclenumber")
 
     def vehicle_location(self, vehicle_number: str):
-        return self._json_request(f"rad/v1/vehicles/{vehicle_number}/location")
+        return self._json_request(f"rad/v1/vehicles/{self._format_vehicle_number(vehicle_number)}/"
+                                  f"location")
 
     def vehicle_status(self, vehicle_number: str):
-        return self._json_request(f"rad/v1/vehicles/{vehicle_number}/status")
+        return self._json_request(f"rad/v1/vehicles/{self._format_vehicle_number(vehicle_number)}/"
+                                  f"status")
 
     def _json_request(self, endpoint, retry=1):
-        """Fetches endpoint request and parses response to JSON"""
-        # API requires encoding for whitespace and characters '"#%|&-<>()'
-        encoded_endpoint = quote(endpoint).replace("-", "%2D")
-        response = requests.get(f'{self._URL_BASE}{encoded_endpoint}', headers={
+        """Fetches endpoint request and parses response to JSON (assumes correct endpoint encoding)"""
+        response = requests.get(f'{self._URL_BASE}{endpoint}', headers={
             'Authorization': f'Atmosphere atmosphere_app_id={self._APP_ID}, Bearer {self._token}',
             'Accept': 'application/json'})
 
@@ -94,9 +97,14 @@ class VerizonConnectAPI:
         return response.text
 
     @staticmethod
+    def _format_vehicle_number(vehicle_number: str):
+        """Formats vehicle numbers for endpoint URLs"""
+        return quote(vehicle_number.rstrip()).replace('-', '%2D')
+
+    @staticmethod
     def _format_date(date: datetime) -> str:
         """Formats and validates a date for endpoint URLs"""
         if not date.tzinfo == timezone.utc:
             raise ValueError('Verizon Connect API only accepts UTC datetimes')
 
-        return date.strftime('%Y-%m-%dT%H:%M:%S')
+        return quote(date.strftime('%Y-%m-%dT%H:%M:%S'))
