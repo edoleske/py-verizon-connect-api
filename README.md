@@ -1,6 +1,6 @@
 # Verizon Connect API
 This module handles authentication and data-fetching with the Verizon 
-Connect API. Currently, Verizon Connect uses the "Basic" HTTP 
+Connect API v1. Currently, Verizon Connect uses the "Basic" HTTP 
 authentication scheme, which requires a username and password. Use of 
 the API will require registration of an app in their Developer Portal.
 

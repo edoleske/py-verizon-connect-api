@@ -7,7 +7,7 @@ name = "verizon_connect_api"
 description = "Helper class for Verizon Connect API"
 readme = "README.md"
 license = { text = "MIT" }
-version = "0.1.1"
+version = "0.2.0"
 requires-python = ">=3.8"
 authors = [
     {name = "Ethan O'Leske", email = "ethan.oleske@gmail.com"}
@@ -24,6 +24,7 @@ dependencies = [
 [project.optional-dependencies]
 test = [
     "python-dotenv~=1.0",
+    "pydantic~=2.8"
 ]
 doc = [
     "sphinx",
