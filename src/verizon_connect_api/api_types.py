@@ -1,4 +1,52 @@
-from typing import TypedDict, Optional
+from typing import TypedDict, Optional, NotRequired, Union
+
+
+class Link(TypedDict):
+    Href: str
+
+
+class LinkLowercase(TypedDict):
+    href: str
+
+
+class DriverDetails(TypedDict):
+    CreatedDateUTC: str
+    DriverNumber: Optional[str]
+    EmailAddress: str
+    FirstName: str
+    LastName: str
+    EnableMobileAccess: bool
+    PhoneNumber: Optional[str]
+    UserApiInsteadOfSts: bool
+
+
+class PartialDriver(TypedDict):
+    FirstName: str
+    LastName: str
+    Number: Optional[str]
+
+
+class DriverLinks(TypedDict):
+    KeyFobs: NotRequired[Link]
+    Self: Link
+
+
+class Driver(TypedDict):
+    Driver: DriverDetails
+    Links: DriverLinks
+
+
+class DriverLogBookSettings(TypedDict):
+    DriverNumber: Optional[str]
+    FirstName: str
+    LastName: str
+    IsELD: bool
+    RuleSet: str
+
+
+class DriverLogBookSettingsResponse(TypedDict):
+    DriverLogBookSettings: DriverLogBookSettings
+    Links: DriverLinks
 
 
 class Vehicle(TypedDict):
@@ -121,16 +169,16 @@ class Segment(TypedDict):
     StartDateUtc: str
     StartLocation: AddressWithCoordinates
     StartLocationIsPrivate: bool
-    EndLocation: AddressWithCoordinates
-    EndDateUtc: str
-    EndLocationIsPrivate: bool
+    EndLocation: Optional[AddressWithCoordinates]
+    EndDateUtc: Optional[str]
+    EndLocationIsPrivate: Optional[bool]
     IsComplete: bool
-    DistanceKilometers: float
+    DistanceKilometers: Optional[float]
 
 
 class SegmentHistory(TypedDict):
-    Driver: Optional[str]
-    Vehicle: PartialVehicle
+    Driver: Optional[PartialDriver]
+    Vehicle: Optional[PartialVehicle]
     Segments: list[Segment]
 
 
@@ -149,3 +197,33 @@ class VehicleStatus(TypedDict):
     BatteryLevel: Optional[float]
     TractionBatteryChargingUtc: Optional[str]
     TractionBatteryChargingLastStartUtc: Optional[str]
+
+
+class User(TypedDict):
+    FirstName: str
+    LastName: str
+    EmailAddress: str
+    EmployeeId: Optional[int]
+    IsAdministrator: bool
+    IsRegionalAdministrator: bool
+    Role: Optional[str]
+    IsDriver: bool
+
+
+class UserDetails(User, TypedDict):
+    MobileNumber: Optional[str]
+    TimeZone: str
+    Region: str
+    Language: str
+    DriverNumber: Optional[str]
+    UserApiInsteadOfSts: bool
+
+
+class UserLinks(TypedDict):
+    self: LinkLowercase
+    groups: LinkLowercase
+
+
+class UserResponse(TypedDict):
+    user: Union[User, UserDetails]
+    _links: Optional[UserLinks]
