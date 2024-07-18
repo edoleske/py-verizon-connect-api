@@ -91,24 +91,24 @@ class DiagnosticTroubleCodeHistory(TypedDict):
 
 
 class EngineControlModuleStatus(TypedDict):
-    CurrentOdometer: float
+    CurrentOdometer: Optional[float]
     DeviceTimeZoneOffset: Optional[int]
-    DeviceTimeZoneUseDST: bool
-    DisplayState: str
+    DeviceTimeZoneUseDST: Optional[bool]
+    DisplayState: Optional[str]
     DriverName: Optional[str]
     DriverNumber: Optional[str]
     DTCs: Optional[list[str]]
     # haha typo in production
-    EngineMintutes: int
-    FuelLevelPercentage: float
-    IdleTime: int
-    Speed: float
-    SensorValues: list[str]
-    UpdateUTC: str
-    TotalFuelUsed: float
-    TotalIdleFuel: float
-    TotalPTOFuel: float
-    TotalPTOTime: int
+    EngineMintutes: Optional[int]
+    FuelLevelPercentage: Optional[float]
+    IdleTime: Optional[int]
+    Speed: Optional[float]
+    SensorValues: Optional[list[str]]
+    UpdateUTC: Optional[str]
+    TotalFuelUsed: Optional[float]
+    TotalIdleFuel: Optional[float]
+    TotalPTOFuel: Optional[float]
+    TotalPTOTime: Optional[int]
     VIN: str
     BatteryLevel: Optional[float]
     TractionBatteryChargingLastStartUtc: Optional[str]

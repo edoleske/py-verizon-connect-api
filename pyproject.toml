@@ -7,7 +7,7 @@ name = "verizon_connect_api"
 description = "Helper class for Verizon Connect API"
 readme = "README.md"
 license = { text = "MIT" }
-version = "0.3.0"
+version = "0.3.1"
 requires-python = ">=3.8"
 authors = [
     {name = "Ethan O'Leske", email = "ethan.oleske@gmail.com"}
