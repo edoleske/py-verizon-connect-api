@@ -1,0 +1,1353 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" data-content_root="./">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Types &mdash; verizon-connect-api  documentation</title>
+      <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=80d5e7a1" />
+      <link rel="stylesheet" type="text/css" href="_static/css/theme.css?v=19f00094" />
+
+  
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script src="_static/jquery.js?v=5d32c60e"></script>
+        <script src="_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+        <script src="_static/documentation_options.js?v=5929fcd5"></script>
+        <script src="_static/doctools.js?v=9a2dae69"></script>
+        <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="prev" title="API" href="api.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="index.html" class="icon icon-home">
+            verizon-connect-api
+          </a>
+              <div class="version">
+                0.3.1
+              </div>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Contents</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="api.html">API</a></li>
+</ul>
+<ul class="current">
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Types</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#verizon_connect_api.api_types.ActiveDiagnosticTroubleCodes"><code class="docutils literal notranslate"><span class="pre">ActiveDiagnosticTroubleCodes</span></code></a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#verizon_connect_api.api_types.ActiveDiagnosticTroubleCodes.ActiveDTCs"><code class="docutils literal notranslate"><span class="pre">ActiveDiagnosticTroubleCodes.ActiveDTCs</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#verizon_connect_api.api_types.ActiveDiagnosticTroubleCodes.LastUpdatedDateTime"><code class="docutils literal notranslate"><span class="pre">ActiveDiagnosticTroubleCodes.LastUpdatedDateTime</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#verizon_connect_api.api_types.ActiveDiagnosticTroubleCodes.VehicleName"><code class="docutils literal notranslate"><span class="pre">ActiveDiagnosticTroubleCodes.VehicleName</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#verizon_connect_api.api_types.ActiveDiagnosticTroubleCodes.VehicleNumber"><code class="docutils literal notranslate"><span class="pre">ActiveDiagnosticTroubleCodes.VehicleNumber</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#verizon_connect_api.api_types.Address"><code class="docutils literal notranslate"><span class="pre">Address</span></code></a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#verizon_connect_api.api_types.Address.AddressLine1"><code class="docutils literal notranslate"><span class="pre">Address.AddressLine1</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#verizon_connect_api.api_types.Address.AddressLine2"><code class="docutils literal notranslate"><span class="pre">Address.AddressLine2</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#verizon_connect_api.api_types.Address.AdministrativeArea"><code class="docutils literal notranslate"><span class="pre">Address.AdministrativeArea</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#verizon_connect_api.api_types.Address.Country"><code class="docutils literal notranslate"><span class="pre">Address.Country</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#verizon_connect_api.api_types.Address.Locality"><code class="docutils literal notranslate"><span class="pre">Address.Locality</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#verizon_connect_api.api_types.Address.PostalCode"><code class="docutils literal notranslate"><span class="pre">Address.PostalCode</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#verizon_connect_api.api_types.AddressWithCoordinates"><code class="docutils literal notranslate"><span class="pre">AddressWithCoordinates</span></code></a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#verizon_connect_api.api_types.AddressWithCoordinates.AddressLine1"><code class="docutils literal notranslate"><span class="pre">AddressWithCoordinates.AddressLine1</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#verizon_connect_api.api_types.AddressWithCoordinates.AddressLine2"><code class="docutils literal notranslate"><span class="pre">AddressWithCoordinates.AddressLine2</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#verizon_connect_api.api_types.AddressWithCoordinates.AdministrativeArea"><code class="docutils literal notranslate"><span class="pre">AddressWithCoordinates.AdministrativeArea</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#verizon_connect_api.api_types.AddressWithCoordinates.Country"><code class="docutils literal notranslate"><span class="pre">AddressWithCoordinates.Country</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#verizon_connect_api.api_types.AddressWithCoordinates.Latitude"><code class="docutils literal notranslate"><span class="pre">AddressWithCoordinates.Latitude</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#verizon_connect_api.api_types.AddressWithCoordinates.Locality"><code class="docutils literal notranslate"><span class="pre">AddressWithCoordinates.Locality</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#verizon_connect_api.api_types.AddressWithCoordinates.Longitude"><code class="docutils literal notranslate"><span class="pre">AddressWithCoordinates.Longitude</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#verizon_connect_api.api_types.AddressWithCoordinates.PostalCode"><code class="docutils literal notranslate"><span class="pre">AddressWithCoordinates.PostalCode</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#verizon_connect_api.api_types.Coordinates"><code class="docutils literal notranslate"><span class="pre">Coordinates</span></code></a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#verizon_connect_api.api_types.Coordinates.Latitude"><code class="docutils literal notranslate"><span class="pre">Coordinates.Latitude</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#verizon_connect_api.api_types.Coordinates.Longitude"><code class="docutils literal notranslate"><span class="pre">Coordinates.Longitude</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#verizon_connect_api.api_types.DiagnosticTroubleCode"><code class="docutils literal notranslate"><span class="pre">DiagnosticTroubleCode</span></code></a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#verizon_connect_api.api_types.DiagnosticTroubleCode.DTC"><code class="docutils literal notranslate"><span class="pre">DiagnosticTroubleCode.DTC</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#verizon_connect_api.api_types.DiagnosticTroubleCode.IsActive"><code class="docutils literal notranslate"><span class="pre">DiagnosticTroubleCode.IsActive</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#verizon_connect_api.api_types.DiagnosticTroubleCode.LastUpdatedDateTime"><code class="docutils literal notranslate"><span class="pre">DiagnosticTroubleCode.LastUpdatedDateTime</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#verizon_connect_api.api_types.DiagnosticTroubleCodeHistory"><code class="docutils literal notranslate"><span class="pre">DiagnosticTroubleCodeHistory</span></code></a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#verizon_connect_api.api_types.DiagnosticTroubleCodeHistory.DTCs"><code class="docutils literal notranslate"><span class="pre">DiagnosticTroubleCodeHistory.DTCs</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#verizon_connect_api.api_types.DiagnosticTroubleCodeHistory.VehicleName"><code class="docutils literal notranslate"><span class="pre">DiagnosticTroubleCodeHistory.VehicleName</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#verizon_connect_api.api_types.DiagnosticTroubleCodeHistory.VehicleNumber"><code class="docutils literal notranslate"><span class="pre">DiagnosticTroubleCodeHistory.VehicleNumber</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#verizon_connect_api.api_types.Driver"><code class="docutils literal notranslate"><span class="pre">Driver</span></code></a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#verizon_connect_api.api_types.Driver.Driver"><code class="docutils literal notranslate"><span class="pre">Driver.Driver</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#verizon_connect_api.api_types.Driver.Links"><code class="docutils literal notranslate"><span class="pre">Driver.Links</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#verizon_connect_api.api_types.DriverDetails"><code class="docutils literal notranslate"><span class="pre">DriverDetails</span></code></a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#verizon_connect_api.api_types.DriverDetails.CreatedDateUTC"><code class="docutils literal notranslate"><span class="pre">DriverDetails.CreatedDateUTC</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#verizon_connect_api.api_types.DriverDetails.DriverNumber"><code class="docutils literal notranslate"><span class="pre">DriverDetails.DriverNumber</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#verizon_connect_api.api_types.DriverDetails.EmailAddress"><code class="docutils literal notranslate"><span class="pre">DriverDetails.EmailAddress</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#verizon_connect_api.api_types.DriverDetails.EnableMobileAccess"><code class="docutils literal notranslate"><span class="pre">DriverDetails.EnableMobileAccess</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#verizon_connect_api.api_types.DriverDetails.FirstName"><code class="docutils literal notranslate"><span class="pre">DriverDetails.FirstName</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#verizon_connect_api.api_types.DriverDetails.LastName"><code class="docutils literal notranslate"><span class="pre">DriverDetails.LastName</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#verizon_connect_api.api_types.DriverDetails.PhoneNumber"><code class="docutils literal notranslate"><span class="pre">DriverDetails.PhoneNumber</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#verizon_connect_api.api_types.DriverDetails.UserApiInsteadOfSts"><code class="docutils literal notranslate"><span class="pre">DriverDetails.UserApiInsteadOfSts</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#verizon_connect_api.api_types.DriverLinks"><code class="docutils literal notranslate"><span class="pre">DriverLinks</span></code></a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#verizon_connect_api.api_types.DriverLinks.KeyFobs"><code class="docutils literal notranslate"><span class="pre">DriverLinks.KeyFobs</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#verizon_connect_api.api_types.DriverLinks.Self"><code class="docutils literal notranslate"><span class="pre">DriverLinks.Self</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#verizon_connect_api.api_types.DriverLogBookSettings"><code class="docutils literal notranslate"><span class="pre">DriverLogBookSettings</span></code></a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#verizon_connect_api.api_types.DriverLogBookSettings.DriverNumber"><code class="docutils literal notranslate"><span class="pre">DriverLogBookSettings.DriverNumber</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#verizon_connect_api.api_types.DriverLogBookSettings.FirstName"><code class="docutils literal notranslate"><span class="pre">DriverLogBookSettings.FirstName</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#verizon_connect_api.api_types.DriverLogBookSettings.IsELD"><code class="docutils literal notranslate"><span class="pre">DriverLogBookSettings.IsELD</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#verizon_connect_api.api_types.DriverLogBookSettings.LastName"><code class="docutils literal notranslate"><span class="pre">DriverLogBookSettings.LastName</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#verizon_connect_api.api_types.DriverLogBookSettings.RuleSet"><code class="docutils literal notranslate"><span class="pre">DriverLogBookSettings.RuleSet</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#verizon_connect_api.api_types.DriverLogBookSettingsResponse"><code class="docutils literal notranslate"><span class="pre">DriverLogBookSettingsResponse</span></code></a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#verizon_connect_api.api_types.DriverLogBookSettingsResponse.DriverLogBookSettings"><code class="docutils literal notranslate"><span class="pre">DriverLogBookSettingsResponse.DriverLogBookSettings</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#verizon_connect_api.api_types.DriverLogBookSettingsResponse.Links"><code class="docutils literal notranslate"><span class="pre">DriverLogBookSettingsResponse.Links</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#verizon_connect_api.api_types.EngineControlModuleStatus"><code class="docutils literal notranslate"><span class="pre">EngineControlModuleStatus</span></code></a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#verizon_connect_api.api_types.EngineControlModuleStatus.BatteryLevel"><code class="docutils literal notranslate"><span class="pre">EngineControlModuleStatus.BatteryLevel</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#verizon_connect_api.api_types.EngineControlModuleStatus.CurrentOdometer"><code class="docutils literal notranslate"><span class="pre">EngineControlModuleStatus.CurrentOdometer</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#verizon_connect_api.api_types.EngineControlModuleStatus.DTCs"><code class="docutils literal notranslate"><span class="pre">EngineControlModuleStatus.DTCs</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#verizon_connect_api.api_types.EngineControlModuleStatus.DeviceTimeZoneOffset"><code class="docutils literal notranslate"><span class="pre">EngineControlModuleStatus.DeviceTimeZoneOffset</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#verizon_connect_api.api_types.EngineControlModuleStatus.DeviceTimeZoneUseDST"><code class="docutils literal notranslate"><span class="pre">EngineControlModuleStatus.DeviceTimeZoneUseDST</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#verizon_connect_api.api_types.EngineControlModuleStatus.DisplayState"><code class="docutils literal notranslate"><span class="pre">EngineControlModuleStatus.DisplayState</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#verizon_connect_api.api_types.EngineControlModuleStatus.DriverName"><code class="docutils literal notranslate"><span class="pre">EngineControlModuleStatus.DriverName</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#verizon_connect_api.api_types.EngineControlModuleStatus.DriverNumber"><code class="docutils literal notranslate"><span class="pre">EngineControlModuleStatus.DriverNumber</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#verizon_connect_api.api_types.EngineControlModuleStatus.EngineMintutes"><code class="docutils literal notranslate"><span class="pre">EngineControlModuleStatus.EngineMintutes</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#verizon_connect_api.api_types.EngineControlModuleStatus.FuelLevelPercentage"><code class="docutils literal notranslate"><span class="pre">EngineControlModuleStatus.FuelLevelPercentage</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#verizon_connect_api.api_types.EngineControlModuleStatus.IdleTime"><code class="docutils literal notranslate"><span class="pre">EngineControlModuleStatus.IdleTime</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#verizon_connect_api.api_types.EngineControlModuleStatus.SensorValues"><code class="docutils literal notranslate"><span class="pre">EngineControlModuleStatus.SensorValues</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#verizon_connect_api.api_types.EngineControlModuleStatus.Speed"><code class="docutils literal notranslate"><span class="pre">EngineControlModuleStatus.Speed</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#verizon_connect_api.api_types.EngineControlModuleStatus.TotalFuelUsed"><code class="docutils literal notranslate"><span class="pre">EngineControlModuleStatus.TotalFuelUsed</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#verizon_connect_api.api_types.EngineControlModuleStatus.TotalIdleFuel"><code class="docutils literal notranslate"><span class="pre">EngineControlModuleStatus.TotalIdleFuel</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#verizon_connect_api.api_types.EngineControlModuleStatus.TotalPTOFuel"><code class="docutils literal notranslate"><span class="pre">EngineControlModuleStatus.TotalPTOFuel</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#verizon_connect_api.api_types.EngineControlModuleStatus.TotalPTOTime"><code class="docutils literal notranslate"><span class="pre">EngineControlModuleStatus.TotalPTOTime</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#verizon_connect_api.api_types.EngineControlModuleStatus.TractionBatteryChargingLastStartUtc"><code class="docutils literal notranslate"><span class="pre">EngineControlModuleStatus.TractionBatteryChargingLastStartUtc</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#verizon_connect_api.api_types.EngineControlModuleStatus.TractionBatteryChargingUtc"><code class="docutils literal notranslate"><span class="pre">EngineControlModuleStatus.TractionBatteryChargingUtc</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#verizon_connect_api.api_types.EngineControlModuleStatus.UpdateUTC"><code class="docutils literal notranslate"><span class="pre">EngineControlModuleStatus.UpdateUTC</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#verizon_connect_api.api_types.EngineControlModuleStatus.VIN"><code class="docutils literal notranslate"><span class="pre">EngineControlModuleStatus.VIN</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#verizon_connect_api.api_types.Link"><code class="docutils literal notranslate"><span class="pre">Link</span></code></a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#verizon_connect_api.api_types.Link.Href"><code class="docutils literal notranslate"><span class="pre">Link.Href</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#verizon_connect_api.api_types.LinkLowercase"><code class="docutils literal notranslate"><span class="pre">LinkLowercase</span></code></a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#verizon_connect_api.api_types.LinkLowercase.href"><code class="docutils literal notranslate"><span class="pre">LinkLowercase.href</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#verizon_connect_api.api_types.LocationStatus"><code class="docutils literal notranslate"><span class="pre">LocationStatus</span></code></a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#verizon_connect_api.api_types.LocationStatus.Address"><code class="docutils literal notranslate"><span class="pre">LocationStatus.Address</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#verizon_connect_api.api_types.LocationStatus.DeltaDistance"><code class="docutils literal notranslate"><span class="pre">LocationStatus.DeltaDistance</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#verizon_connect_api.api_types.LocationStatus.DeltaTime"><code class="docutils literal notranslate"><span class="pre">LocationStatus.DeltaTime</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#verizon_connect_api.api_types.LocationStatus.DeviceTimeZoneOffset"><code class="docutils literal notranslate"><span class="pre">LocationStatus.DeviceTimeZoneOffset</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#verizon_connect_api.api_types.LocationStatus.DeviceTimeZoneUseDST"><code class="docutils literal notranslate"><span class="pre">LocationStatus.DeviceTimeZoneUseDST</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#verizon_connect_api.api_types.LocationStatus.Direction"><code class="docutils literal notranslate"><span class="pre">LocationStatus.Direction</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#verizon_connect_api.api_types.LocationStatus.DisplayState"><code class="docutils literal notranslate"><span class="pre">LocationStatus.DisplayState</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#verizon_connect_api.api_types.LocationStatus.DriverNumber"><code class="docutils literal notranslate"><span class="pre">LocationStatus.DriverNumber</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#verizon_connect_api.api_types.LocationStatus.GeoFenceName"><code class="docutils literal notranslate"><span class="pre">LocationStatus.GeoFenceName</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#verizon_connect_api.api_types.LocationStatus.Heading"><code class="docutils literal notranslate"><span class="pre">LocationStatus.Heading</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#verizon_connect_api.api_types.LocationStatus.IsPrivate"><code class="docutils literal notranslate"><span class="pre">LocationStatus.IsPrivate</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#verizon_connect_api.api_types.LocationStatus.Latitude"><code class="docutils literal notranslate"><span class="pre">LocationStatus.Latitude</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#verizon_connect_api.api_types.LocationStatus.Longitude"><code class="docutils literal notranslate"><span class="pre">LocationStatus.Longitude</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#verizon_connect_api.api_types.LocationStatus.Speed"><code class="docutils literal notranslate"><span class="pre">LocationStatus.Speed</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#verizon_connect_api.api_types.LocationStatus.UpdateUTC"><code class="docutils literal notranslate"><span class="pre">LocationStatus.UpdateUTC</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#verizon_connect_api.api_types.PartialDriver"><code class="docutils literal notranslate"><span class="pre">PartialDriver</span></code></a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#verizon_connect_api.api_types.PartialDriver.FirstName"><code class="docutils literal notranslate"><span class="pre">PartialDriver.FirstName</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#verizon_connect_api.api_types.PartialDriver.LastName"><code class="docutils literal notranslate"><span class="pre">PartialDriver.LastName</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#verizon_connect_api.api_types.PartialDriver.Number"><code class="docutils literal notranslate"><span class="pre">PartialDriver.Number</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#verizon_connect_api.api_types.PartialVehicle"><code class="docutils literal notranslate"><span class="pre">PartialVehicle</span></code></a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#verizon_connect_api.api_types.PartialVehicle.Name"><code class="docutils literal notranslate"><span class="pre">PartialVehicle.Name</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#verizon_connect_api.api_types.PartialVehicle.Number"><code class="docutils literal notranslate"><span class="pre">PartialVehicle.Number</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#verizon_connect_api.api_types.Segment"><code class="docutils literal notranslate"><span class="pre">Segment</span></code></a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#verizon_connect_api.api_types.Segment.DistanceKilometers"><code class="docutils literal notranslate"><span class="pre">Segment.DistanceKilometers</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#verizon_connect_api.api_types.Segment.EndDateUtc"><code class="docutils literal notranslate"><span class="pre">Segment.EndDateUtc</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#verizon_connect_api.api_types.Segment.EndLocation"><code class="docutils literal notranslate"><span class="pre">Segment.EndLocation</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#verizon_connect_api.api_types.Segment.EndLocationIsPrivate"><code class="docutils literal notranslate"><span class="pre">Segment.EndLocationIsPrivate</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#verizon_connect_api.api_types.Segment.IsComplete"><code class="docutils literal notranslate"><span class="pre">Segment.IsComplete</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#verizon_connect_api.api_types.Segment.StartDateUtc"><code class="docutils literal notranslate"><span class="pre">Segment.StartDateUtc</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#verizon_connect_api.api_types.Segment.StartLocation"><code class="docutils literal notranslate"><span class="pre">Segment.StartLocation</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#verizon_connect_api.api_types.Segment.StartLocationIsPrivate"><code class="docutils literal notranslate"><span class="pre">Segment.StartLocationIsPrivate</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#verizon_connect_api.api_types.SegmentHistory"><code class="docutils literal notranslate"><span class="pre">SegmentHistory</span></code></a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#verizon_connect_api.api_types.SegmentHistory.Driver"><code class="docutils literal notranslate"><span class="pre">SegmentHistory.Driver</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#verizon_connect_api.api_types.SegmentHistory.Segments"><code class="docutils literal notranslate"><span class="pre">SegmentHistory.Segments</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#verizon_connect_api.api_types.SegmentHistory.Vehicle"><code class="docutils literal notranslate"><span class="pre">SegmentHistory.Vehicle</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#verizon_connect_api.api_types.User"><code class="docutils literal notranslate"><span class="pre">User</span></code></a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#verizon_connect_api.api_types.User.EmailAddress"><code class="docutils literal notranslate"><span class="pre">User.EmailAddress</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#verizon_connect_api.api_types.User.EmployeeId"><code class="docutils literal notranslate"><span class="pre">User.EmployeeId</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#verizon_connect_api.api_types.User.FirstName"><code class="docutils literal notranslate"><span class="pre">User.FirstName</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#verizon_connect_api.api_types.User.IsAdministrator"><code class="docutils literal notranslate"><span class="pre">User.IsAdministrator</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#verizon_connect_api.api_types.User.IsDriver"><code class="docutils literal notranslate"><span class="pre">User.IsDriver</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#verizon_connect_api.api_types.User.IsRegionalAdministrator"><code class="docutils literal notranslate"><span class="pre">User.IsRegionalAdministrator</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#verizon_connect_api.api_types.User.LastName"><code class="docutils literal notranslate"><span class="pre">User.LastName</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#verizon_connect_api.api_types.User.Role"><code class="docutils literal notranslate"><span class="pre">User.Role</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#verizon_connect_api.api_types.UserDetails"><code class="docutils literal notranslate"><span class="pre">UserDetails</span></code></a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#verizon_connect_api.api_types.UserDetails.DriverNumber"><code class="docutils literal notranslate"><span class="pre">UserDetails.DriverNumber</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#verizon_connect_api.api_types.UserDetails.EmailAddress"><code class="docutils literal notranslate"><span class="pre">UserDetails.EmailAddress</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#verizon_connect_api.api_types.UserDetails.EmployeeId"><code class="docutils literal notranslate"><span class="pre">UserDetails.EmployeeId</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#verizon_connect_api.api_types.UserDetails.FirstName"><code class="docutils literal notranslate"><span class="pre">UserDetails.FirstName</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#verizon_connect_api.api_types.UserDetails.IsAdministrator"><code class="docutils literal notranslate"><span class="pre">UserDetails.IsAdministrator</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#verizon_connect_api.api_types.UserDetails.IsDriver"><code class="docutils literal notranslate"><span class="pre">UserDetails.IsDriver</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#verizon_connect_api.api_types.UserDetails.IsRegionalAdministrator"><code class="docutils literal notranslate"><span class="pre">UserDetails.IsRegionalAdministrator</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#verizon_connect_api.api_types.UserDetails.Language"><code class="docutils literal notranslate"><span class="pre">UserDetails.Language</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#verizon_connect_api.api_types.UserDetails.LastName"><code class="docutils literal notranslate"><span class="pre">UserDetails.LastName</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#verizon_connect_api.api_types.UserDetails.MobileNumber"><code class="docutils literal notranslate"><span class="pre">UserDetails.MobileNumber</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#verizon_connect_api.api_types.UserDetails.Region"><code class="docutils literal notranslate"><span class="pre">UserDetails.Region</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#verizon_connect_api.api_types.UserDetails.Role"><code class="docutils literal notranslate"><span class="pre">UserDetails.Role</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#verizon_connect_api.api_types.UserDetails.TimeZone"><code class="docutils literal notranslate"><span class="pre">UserDetails.TimeZone</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#verizon_connect_api.api_types.UserDetails.UserApiInsteadOfSts"><code class="docutils literal notranslate"><span class="pre">UserDetails.UserApiInsteadOfSts</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#verizon_connect_api.api_types.UserLinks"><code class="docutils literal notranslate"><span class="pre">UserLinks</span></code></a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#verizon_connect_api.api_types.UserLinks.groups"><code class="docutils literal notranslate"><span class="pre">UserLinks.groups</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#verizon_connect_api.api_types.UserLinks.self"><code class="docutils literal notranslate"><span class="pre">UserLinks.self</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#verizon_connect_api.api_types.UserResponse"><code class="docutils literal notranslate"><span class="pre">UserResponse</span></code></a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#verizon_connect_api.api_types.UserResponse.user"><code class="docutils literal notranslate"><span class="pre">UserResponse.user</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#verizon_connect_api.api_types.Vehicle"><code class="docutils literal notranslate"><span class="pre">Vehicle</span></code></a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#verizon_connect_api.api_types.Vehicle.CityMPG"><code class="docutils literal notranslate"><span class="pre">Vehicle.CityMPG</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#verizon_connect_api.api_types.Vehicle.FuelType"><code class="docutils literal notranslate"><span class="pre">Vehicle.FuelType</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#verizon_connect_api.api_types.Vehicle.HasNavigationDevice"><code class="docutils literal notranslate"><span class="pre">Vehicle.HasNavigationDevice</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#verizon_connect_api.api_types.Vehicle.HasTachograph"><code class="docutils literal notranslate"><span class="pre">Vehicle.HasTachograph</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#verizon_connect_api.api_types.Vehicle.HighwayMPG"><code class="docutils literal notranslate"><span class="pre">Vehicle.HighwayMPG</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#verizon_connect_api.api_types.Vehicle.Make"><code class="docutils literal notranslate"><span class="pre">Vehicle.Make</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#verizon_connect_api.api_types.Vehicle.Model"><code class="docutils literal notranslate"><span class="pre">Vehicle.Model</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#verizon_connect_api.api_types.Vehicle.Name"><code class="docutils literal notranslate"><span class="pre">Vehicle.Name</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#verizon_connect_api.api_types.Vehicle.RegistrationNumber"><code class="docutils literal notranslate"><span class="pre">Vehicle.RegistrationNumber</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#verizon_connect_api.api_types.Vehicle.TankCapacity"><code class="docutils literal notranslate"><span class="pre">Vehicle.TankCapacity</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#verizon_connect_api.api_types.Vehicle.VIN"><code class="docutils literal notranslate"><span class="pre">Vehicle.VIN</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#verizon_connect_api.api_types.Vehicle.VehicleNumber"><code class="docutils literal notranslate"><span class="pre">Vehicle.VehicleNumber</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#verizon_connect_api.api_types.Vehicle.VehicleSize"><code class="docutils literal notranslate"><span class="pre">Vehicle.VehicleSize</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#verizon_connect_api.api_types.Vehicle.Year"><code class="docutils literal notranslate"><span class="pre">Vehicle.Year</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#verizon_connect_api.api_types.VehicleGPSLocation"><code class="docutils literal notranslate"><span class="pre">VehicleGPSLocation</span></code></a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#verizon_connect_api.api_types.VehicleGPSLocation.Address"><code class="docutils literal notranslate"><span class="pre">VehicleGPSLocation.Address</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#verizon_connect_api.api_types.VehicleGPSLocation.BatteryLevel"><code class="docutils literal notranslate"><span class="pre">VehicleGPSLocation.BatteryLevel</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#verizon_connect_api.api_types.VehicleGPSLocation.DriverNumber"><code class="docutils literal notranslate"><span class="pre">VehicleGPSLocation.DriverNumber</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#verizon_connect_api.api_types.VehicleGPSLocation.FirstName"><code class="docutils literal notranslate"><span class="pre">VehicleGPSLocation.FirstName</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#verizon_connect_api.api_types.VehicleGPSLocation.IsPrivate"><code class="docutils literal notranslate"><span class="pre">VehicleGPSLocation.IsPrivate</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#verizon_connect_api.api_types.VehicleGPSLocation.LastName"><code class="docutils literal notranslate"><span class="pre">VehicleGPSLocation.LastName</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#verizon_connect_api.api_types.VehicleGPSLocation.Latitude"><code class="docutils literal notranslate"><span class="pre">VehicleGPSLocation.Latitude</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#verizon_connect_api.api_types.VehicleGPSLocation.Longitude"><code class="docutils literal notranslate"><span class="pre">VehicleGPSLocation.Longitude</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#verizon_connect_api.api_types.VehicleGPSLocation.OdometerInKM"><code class="docutils literal notranslate"><span class="pre">VehicleGPSLocation.OdometerInKM</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#verizon_connect_api.api_types.VehicleGPSLocation.Speed"><code class="docutils literal notranslate"><span class="pre">VehicleGPSLocation.Speed</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#verizon_connect_api.api_types.VehicleGPSLocation.TractionBatteryChargingLastStartUtc"><code class="docutils literal notranslate"><span class="pre">VehicleGPSLocation.TractionBatteryChargingLastStartUtc</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#verizon_connect_api.api_types.VehicleGPSLocation.TractionBatteryChargingUtc"><code class="docutils literal notranslate"><span class="pre">VehicleGPSLocation.TractionBatteryChargingUtc</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#verizon_connect_api.api_types.VehicleGPSLocation.UpdateUtc"><code class="docutils literal notranslate"><span class="pre">VehicleGPSLocation.UpdateUtc</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#verizon_connect_api.api_types.VehicleGPSLocation.VehicleName"><code class="docutils literal notranslate"><span class="pre">VehicleGPSLocation.VehicleName</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#verizon_connect_api.api_types.VehicleGPSLocation.VehicleNumber"><code class="docutils literal notranslate"><span class="pre">VehicleGPSLocation.VehicleNumber</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#verizon_connect_api.api_types.VehicleStatus"><code class="docutils literal notranslate"><span class="pre">VehicleStatus</span></code></a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#verizon_connect_api.api_types.VehicleStatus.BatteryLevel"><code class="docutils literal notranslate"><span class="pre">VehicleStatus.BatteryLevel</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#verizon_connect_api.api_types.VehicleStatus.CurrentOdometer"><code class="docutils literal notranslate"><span class="pre">VehicleStatus.CurrentOdometer</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#verizon_connect_api.api_types.VehicleStatus.DeviceTimeZoneOffset"><code class="docutils literal notranslate"><span class="pre">VehicleStatus.DeviceTimeZoneOffset</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#verizon_connect_api.api_types.VehicleStatus.DeviceTimeZoneUseDST"><code class="docutils literal notranslate"><span class="pre">VehicleStatus.DeviceTimeZoneUseDST</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#verizon_connect_api.api_types.VehicleStatus.DisplayState"><code class="docutils literal notranslate"><span class="pre">VehicleStatus.DisplayState</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#verizon_connect_api.api_types.VehicleStatus.DriverName"><code class="docutils literal notranslate"><span class="pre">VehicleStatus.DriverName</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#verizon_connect_api.api_types.VehicleStatus.DriverNumber"><code class="docutils literal notranslate"><span class="pre">VehicleStatus.DriverNumber</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#verizon_connect_api.api_types.VehicleStatus.EngineMinutes"><code class="docutils literal notranslate"><span class="pre">VehicleStatus.EngineMinutes</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#verizon_connect_api.api_types.VehicleStatus.IdleTime"><code class="docutils literal notranslate"><span class="pre">VehicleStatus.IdleTime</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#verizon_connect_api.api_types.VehicleStatus.SensorValues"><code class="docutils literal notranslate"><span class="pre">VehicleStatus.SensorValues</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#verizon_connect_api.api_types.VehicleStatus.Speed"><code class="docutils literal notranslate"><span class="pre">VehicleStatus.Speed</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#verizon_connect_api.api_types.VehicleStatus.TractionBatteryChargingLastStartUtc"><code class="docutils literal notranslate"><span class="pre">VehicleStatus.TractionBatteryChargingLastStartUtc</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#verizon_connect_api.api_types.VehicleStatus.TractionBatteryChargingUtc"><code class="docutils literal notranslate"><span class="pre">VehicleStatus.TractionBatteryChargingUtc</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#verizon_connect_api.api_types.VehicleStatus.UpdateUTC"><code class="docutils literal notranslate"><span class="pre">VehicleStatus.UpdateUTC</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">verizon-connect-api</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="index.html" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active">Types</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="_sources/types.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="module-verizon_connect_api.api_types">
+<span id="types"></span><h1>Types<a class="headerlink" href="#module-verizon_connect_api.api_types" title="Link to this heading"></a></h1>
+<dl class="py class">
+<dt class="sig sig-object py" id="verizon_connect_api.api_types.ActiveDiagnosticTroubleCodes">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">verizon_connect_api.api_types.</span></span><span class="sig-name descname"><span class="pre">ActiveDiagnosticTroubleCodes</span></span><a class="headerlink" href="#verizon_connect_api.api_types.ActiveDiagnosticTroubleCodes" title="Link to this definition"></a></dt>
+<dd><p>Bases: <a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.TypedDict" title="(in Python v3.12)"><code class="xref py py-class docutils literal notranslate"><span class="pre">TypedDict</span></code></a></p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="verizon_connect_api.api_types.ActiveDiagnosticTroubleCodes.ActiveDTCs">
+<span class="sig-name descname"><span class="pre">ActiveDTCs</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.12)"><span class="pre">str</span></a></em><a class="headerlink" href="#verizon_connect_api.api_types.ActiveDiagnosticTroubleCodes.ActiveDTCs" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="verizon_connect_api.api_types.ActiveDiagnosticTroubleCodes.LastUpdatedDateTime">
+<span class="sig-name descname"><span class="pre">LastUpdatedDateTime</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.12)"><span class="pre">str</span></a></em><a class="headerlink" href="#verizon_connect_api.api_types.ActiveDiagnosticTroubleCodes.LastUpdatedDateTime" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="verizon_connect_api.api_types.ActiveDiagnosticTroubleCodes.VehicleName">
+<span class="sig-name descname"><span class="pre">VehicleName</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.12)"><span class="pre">str</span></a></em><a class="headerlink" href="#verizon_connect_api.api_types.ActiveDiagnosticTroubleCodes.VehicleName" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="verizon_connect_api.api_types.ActiveDiagnosticTroubleCodes.VehicleNumber">
+<span class="sig-name descname"><span class="pre">VehicleNumber</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.12)"><span class="pre">str</span></a></em><a class="headerlink" href="#verizon_connect_api.api_types.ActiveDiagnosticTroubleCodes.VehicleNumber" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="verizon_connect_api.api_types.Address">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">verizon_connect_api.api_types.</span></span><span class="sig-name descname"><span class="pre">Address</span></span><a class="headerlink" href="#verizon_connect_api.api_types.Address" title="Link to this definition"></a></dt>
+<dd><p>Bases: <a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.TypedDict" title="(in Python v3.12)"><code class="xref py py-class docutils literal notranslate"><span class="pre">TypedDict</span></code></a></p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="verizon_connect_api.api_types.Address.AddressLine1">
+<span class="sig-name descname"><span class="pre">AddressLine1</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.12)"><span class="pre">str</span></a></em><a class="headerlink" href="#verizon_connect_api.api_types.Address.AddressLine1" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="verizon_connect_api.api_types.Address.AddressLine2">
+<span class="sig-name descname"><span class="pre">AddressLine2</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.12)"><span class="pre">str</span></a></em><a class="headerlink" href="#verizon_connect_api.api_types.Address.AddressLine2" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="verizon_connect_api.api_types.Address.AdministrativeArea">
+<span class="sig-name descname"><span class="pre">AdministrativeArea</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.12)"><span class="pre">str</span></a></em><a class="headerlink" href="#verizon_connect_api.api_types.Address.AdministrativeArea" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="verizon_connect_api.api_types.Address.Country">
+<span class="sig-name descname"><span class="pre">Country</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.12)"><span class="pre">str</span></a></em><a class="headerlink" href="#verizon_connect_api.api_types.Address.Country" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="verizon_connect_api.api_types.Address.Locality">
+<span class="sig-name descname"><span class="pre">Locality</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.12)"><span class="pre">str</span></a></em><a class="headerlink" href="#verizon_connect_api.api_types.Address.Locality" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="verizon_connect_api.api_types.Address.PostalCode">
+<span class="sig-name descname"><span class="pre">PostalCode</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.12)"><span class="pre">str</span></a></em><a class="headerlink" href="#verizon_connect_api.api_types.Address.PostalCode" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="verizon_connect_api.api_types.AddressWithCoordinates">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">verizon_connect_api.api_types.</span></span><span class="sig-name descname"><span class="pre">AddressWithCoordinates</span></span><a class="headerlink" href="#verizon_connect_api.api_types.AddressWithCoordinates" title="Link to this definition"></a></dt>
+<dd><p>Bases: <a class="reference internal" href="#verizon_connect_api.api_types.Address" title="verizon_connect_api.api_types.Address"><code class="xref py py-class docutils literal notranslate"><span class="pre">Address</span></code></a>, <a class="reference internal" href="#verizon_connect_api.api_types.Coordinates" title="verizon_connect_api.api_types.Coordinates"><code class="xref py py-class docutils literal notranslate"><span class="pre">Coordinates</span></code></a></p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="verizon_connect_api.api_types.AddressWithCoordinates.AddressLine1">
+<span class="sig-name descname"><span class="pre">AddressLine1</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.12)"><span class="pre">str</span></a></em><a class="headerlink" href="#verizon_connect_api.api_types.AddressWithCoordinates.AddressLine1" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="verizon_connect_api.api_types.AddressWithCoordinates.AddressLine2">
+<span class="sig-name descname"><span class="pre">AddressLine2</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.12)"><span class="pre">str</span></a></em><a class="headerlink" href="#verizon_connect_api.api_types.AddressWithCoordinates.AddressLine2" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="verizon_connect_api.api_types.AddressWithCoordinates.AdministrativeArea">
+<span class="sig-name descname"><span class="pre">AdministrativeArea</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.12)"><span class="pre">str</span></a></em><a class="headerlink" href="#verizon_connect_api.api_types.AddressWithCoordinates.AdministrativeArea" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="verizon_connect_api.api_types.AddressWithCoordinates.Country">
+<span class="sig-name descname"><span class="pre">Country</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.12)"><span class="pre">str</span></a></em><a class="headerlink" href="#verizon_connect_api.api_types.AddressWithCoordinates.Country" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="verizon_connect_api.api_types.AddressWithCoordinates.Latitude">
+<span class="sig-name descname"><span class="pre">Latitude</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.12)"><span class="pre">float</span></a></em><a class="headerlink" href="#verizon_connect_api.api_types.AddressWithCoordinates.Latitude" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="verizon_connect_api.api_types.AddressWithCoordinates.Locality">
+<span class="sig-name descname"><span class="pre">Locality</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.12)"><span class="pre">str</span></a></em><a class="headerlink" href="#verizon_connect_api.api_types.AddressWithCoordinates.Locality" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="verizon_connect_api.api_types.AddressWithCoordinates.Longitude">
+<span class="sig-name descname"><span class="pre">Longitude</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.12)"><span class="pre">float</span></a></em><a class="headerlink" href="#verizon_connect_api.api_types.AddressWithCoordinates.Longitude" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="verizon_connect_api.api_types.AddressWithCoordinates.PostalCode">
+<span class="sig-name descname"><span class="pre">PostalCode</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.12)"><span class="pre">str</span></a></em><a class="headerlink" href="#verizon_connect_api.api_types.AddressWithCoordinates.PostalCode" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="verizon_connect_api.api_types.Coordinates">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">verizon_connect_api.api_types.</span></span><span class="sig-name descname"><span class="pre">Coordinates</span></span><a class="headerlink" href="#verizon_connect_api.api_types.Coordinates" title="Link to this definition"></a></dt>
+<dd><p>Bases: <a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.TypedDict" title="(in Python v3.12)"><code class="xref py py-class docutils literal notranslate"><span class="pre">TypedDict</span></code></a></p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="verizon_connect_api.api_types.Coordinates.Latitude">
+<span class="sig-name descname"><span class="pre">Latitude</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.12)"><span class="pre">float</span></a></em><a class="headerlink" href="#verizon_connect_api.api_types.Coordinates.Latitude" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="verizon_connect_api.api_types.Coordinates.Longitude">
+<span class="sig-name descname"><span class="pre">Longitude</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.12)"><span class="pre">float</span></a></em><a class="headerlink" href="#verizon_connect_api.api_types.Coordinates.Longitude" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="verizon_connect_api.api_types.DiagnosticTroubleCode">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">verizon_connect_api.api_types.</span></span><span class="sig-name descname"><span class="pre">DiagnosticTroubleCode</span></span><a class="headerlink" href="#verizon_connect_api.api_types.DiagnosticTroubleCode" title="Link to this definition"></a></dt>
+<dd><p>Bases: <a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.TypedDict" title="(in Python v3.12)"><code class="xref py py-class docutils literal notranslate"><span class="pre">TypedDict</span></code></a></p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="verizon_connect_api.api_types.DiagnosticTroubleCode.DTC">
+<span class="sig-name descname"><span class="pre">DTC</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.12)"><span class="pre">str</span></a></em><a class="headerlink" href="#verizon_connect_api.api_types.DiagnosticTroubleCode.DTC" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="verizon_connect_api.api_types.DiagnosticTroubleCode.IsActive">
+<span class="sig-name descname"><span class="pre">IsActive</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.12)"><span class="pre">bool</span></a></em><a class="headerlink" href="#verizon_connect_api.api_types.DiagnosticTroubleCode.IsActive" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="verizon_connect_api.api_types.DiagnosticTroubleCode.LastUpdatedDateTime">
+<span class="sig-name descname"><span class="pre">LastUpdatedDateTime</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.12)"><span class="pre">str</span></a></em><a class="headerlink" href="#verizon_connect_api.api_types.DiagnosticTroubleCode.LastUpdatedDateTime" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="verizon_connect_api.api_types.DiagnosticTroubleCodeHistory">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">verizon_connect_api.api_types.</span></span><span class="sig-name descname"><span class="pre">DiagnosticTroubleCodeHistory</span></span><a class="headerlink" href="#verizon_connect_api.api_types.DiagnosticTroubleCodeHistory" title="Link to this definition"></a></dt>
+<dd><p>Bases: <a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.TypedDict" title="(in Python v3.12)"><code class="xref py py-class docutils literal notranslate"><span class="pre">TypedDict</span></code></a></p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="verizon_connect_api.api_types.DiagnosticTroubleCodeHistory.DTCs">
+<span class="sig-name descname"><span class="pre">DTCs</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#list" title="(in Python v3.12)"><span class="pre">list</span></a><span class="p"><span class="pre">[</span></span><a class="reference internal" href="#verizon_connect_api.api_types.DiagnosticTroubleCode" title="verizon_connect_api.api_types.DiagnosticTroubleCode"><span class="pre">DiagnosticTroubleCode</span></a><span class="p"><span class="pre">]</span></span></em><a class="headerlink" href="#verizon_connect_api.api_types.DiagnosticTroubleCodeHistory.DTCs" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="verizon_connect_api.api_types.DiagnosticTroubleCodeHistory.VehicleName">
+<span class="sig-name descname"><span class="pre">VehicleName</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.12)"><span class="pre">str</span></a></em><a class="headerlink" href="#verizon_connect_api.api_types.DiagnosticTroubleCodeHistory.VehicleName" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="verizon_connect_api.api_types.DiagnosticTroubleCodeHistory.VehicleNumber">
+<span class="sig-name descname"><span class="pre">VehicleNumber</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.12)"><span class="pre">str</span></a></em><a class="headerlink" href="#verizon_connect_api.api_types.DiagnosticTroubleCodeHistory.VehicleNumber" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="verizon_connect_api.api_types.Driver">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">verizon_connect_api.api_types.</span></span><span class="sig-name descname"><span class="pre">Driver</span></span><a class="headerlink" href="#verizon_connect_api.api_types.Driver" title="Link to this definition"></a></dt>
+<dd><p>Bases: <a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.TypedDict" title="(in Python v3.12)"><code class="xref py py-class docutils literal notranslate"><span class="pre">TypedDict</span></code></a></p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="verizon_connect_api.api_types.Driver.Driver">
+<span class="sig-name descname"><span class="pre">Driver</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference internal" href="#verizon_connect_api.api_types.DriverDetails" title="verizon_connect_api.api_types.DriverDetails"><span class="pre">DriverDetails</span></a></em><a class="headerlink" href="#verizon_connect_api.api_types.Driver.Driver" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="verizon_connect_api.api_types.Driver.Links">
+<span class="sig-name descname"><span class="pre">Links</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference internal" href="#verizon_connect_api.api_types.DriverLinks" title="verizon_connect_api.api_types.DriverLinks"><span class="pre">DriverLinks</span></a></em><a class="headerlink" href="#verizon_connect_api.api_types.Driver.Links" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="verizon_connect_api.api_types.DriverDetails">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">verizon_connect_api.api_types.</span></span><span class="sig-name descname"><span class="pre">DriverDetails</span></span><a class="headerlink" href="#verizon_connect_api.api_types.DriverDetails" title="Link to this definition"></a></dt>
+<dd><p>Bases: <a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.TypedDict" title="(in Python v3.12)"><code class="xref py py-class docutils literal notranslate"><span class="pre">TypedDict</span></code></a></p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="verizon_connect_api.api_types.DriverDetails.CreatedDateUTC">
+<span class="sig-name descname"><span class="pre">CreatedDateUTC</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.12)"><span class="pre">str</span></a></em><a class="headerlink" href="#verizon_connect_api.api_types.DriverDetails.CreatedDateUTC" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="verizon_connect_api.api_types.DriverDetails.DriverNumber">
+<span class="sig-name descname"><span class="pre">DriverNumber</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.12)"><span class="pre">str</span></a><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3/library/constants.html#None" title="(in Python v3.12)"><span class="pre">None</span></a></em><a class="headerlink" href="#verizon_connect_api.api_types.DriverDetails.DriverNumber" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="verizon_connect_api.api_types.DriverDetails.EmailAddress">
+<span class="sig-name descname"><span class="pre">EmailAddress</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.12)"><span class="pre">str</span></a></em><a class="headerlink" href="#verizon_connect_api.api_types.DriverDetails.EmailAddress" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="verizon_connect_api.api_types.DriverDetails.EnableMobileAccess">
+<span class="sig-name descname"><span class="pre">EnableMobileAccess</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.12)"><span class="pre">bool</span></a></em><a class="headerlink" href="#verizon_connect_api.api_types.DriverDetails.EnableMobileAccess" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="verizon_connect_api.api_types.DriverDetails.FirstName">
+<span class="sig-name descname"><span class="pre">FirstName</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.12)"><span class="pre">str</span></a></em><a class="headerlink" href="#verizon_connect_api.api_types.DriverDetails.FirstName" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="verizon_connect_api.api_types.DriverDetails.LastName">
+<span class="sig-name descname"><span class="pre">LastName</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.12)"><span class="pre">str</span></a></em><a class="headerlink" href="#verizon_connect_api.api_types.DriverDetails.LastName" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="verizon_connect_api.api_types.DriverDetails.PhoneNumber">
+<span class="sig-name descname"><span class="pre">PhoneNumber</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.12)"><span class="pre">str</span></a><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3/library/constants.html#None" title="(in Python v3.12)"><span class="pre">None</span></a></em><a class="headerlink" href="#verizon_connect_api.api_types.DriverDetails.PhoneNumber" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="verizon_connect_api.api_types.DriverDetails.UserApiInsteadOfSts">
+<span class="sig-name descname"><span class="pre">UserApiInsteadOfSts</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.12)"><span class="pre">bool</span></a></em><a class="headerlink" href="#verizon_connect_api.api_types.DriverDetails.UserApiInsteadOfSts" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="verizon_connect_api.api_types.DriverLinks">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">verizon_connect_api.api_types.</span></span><span class="sig-name descname"><span class="pre">DriverLinks</span></span><a class="headerlink" href="#verizon_connect_api.api_types.DriverLinks" title="Link to this definition"></a></dt>
+<dd><p>Bases: <a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.TypedDict" title="(in Python v3.12)"><code class="xref py py-class docutils literal notranslate"><span class="pre">TypedDict</span></code></a></p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="verizon_connect_api.api_types.DriverLinks.KeyFobs">
+<span class="sig-name descname"><span class="pre">KeyFobs</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference internal" href="#verizon_connect_api.api_types.Link" title="verizon_connect_api.api_types.Link"><span class="pre">Link</span></a></em><a class="headerlink" href="#verizon_connect_api.api_types.DriverLinks.KeyFobs" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="verizon_connect_api.api_types.DriverLinks.Self">
+<span class="sig-name descname"><span class="pre">Self</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference internal" href="#verizon_connect_api.api_types.Link" title="verizon_connect_api.api_types.Link"><span class="pre">Link</span></a></em><a class="headerlink" href="#verizon_connect_api.api_types.DriverLinks.Self" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="verizon_connect_api.api_types.DriverLogBookSettings">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">verizon_connect_api.api_types.</span></span><span class="sig-name descname"><span class="pre">DriverLogBookSettings</span></span><a class="headerlink" href="#verizon_connect_api.api_types.DriverLogBookSettings" title="Link to this definition"></a></dt>
+<dd><p>Bases: <a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.TypedDict" title="(in Python v3.12)"><code class="xref py py-class docutils literal notranslate"><span class="pre">TypedDict</span></code></a></p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="verizon_connect_api.api_types.DriverLogBookSettings.DriverNumber">
+<span class="sig-name descname"><span class="pre">DriverNumber</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.12)"><span class="pre">str</span></a><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3/library/constants.html#None" title="(in Python v3.12)"><span class="pre">None</span></a></em><a class="headerlink" href="#verizon_connect_api.api_types.DriverLogBookSettings.DriverNumber" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="verizon_connect_api.api_types.DriverLogBookSettings.FirstName">
+<span class="sig-name descname"><span class="pre">FirstName</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.12)"><span class="pre">str</span></a></em><a class="headerlink" href="#verizon_connect_api.api_types.DriverLogBookSettings.FirstName" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="verizon_connect_api.api_types.DriverLogBookSettings.IsELD">
+<span class="sig-name descname"><span class="pre">IsELD</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.12)"><span class="pre">bool</span></a></em><a class="headerlink" href="#verizon_connect_api.api_types.DriverLogBookSettings.IsELD" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="verizon_connect_api.api_types.DriverLogBookSettings.LastName">
+<span class="sig-name descname"><span class="pre">LastName</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.12)"><span class="pre">str</span></a></em><a class="headerlink" href="#verizon_connect_api.api_types.DriverLogBookSettings.LastName" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="verizon_connect_api.api_types.DriverLogBookSettings.RuleSet">
+<span class="sig-name descname"><span class="pre">RuleSet</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.12)"><span class="pre">str</span></a></em><a class="headerlink" href="#verizon_connect_api.api_types.DriverLogBookSettings.RuleSet" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="verizon_connect_api.api_types.DriverLogBookSettingsResponse">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">verizon_connect_api.api_types.</span></span><span class="sig-name descname"><span class="pre">DriverLogBookSettingsResponse</span></span><a class="headerlink" href="#verizon_connect_api.api_types.DriverLogBookSettingsResponse" title="Link to this definition"></a></dt>
+<dd><p>Bases: <a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.TypedDict" title="(in Python v3.12)"><code class="xref py py-class docutils literal notranslate"><span class="pre">TypedDict</span></code></a></p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="verizon_connect_api.api_types.DriverLogBookSettingsResponse.DriverLogBookSettings">
+<span class="sig-name descname"><span class="pre">DriverLogBookSettings</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference internal" href="#verizon_connect_api.api_types.DriverLogBookSettings" title="verizon_connect_api.api_types.DriverLogBookSettings"><span class="pre">DriverLogBookSettings</span></a></em><a class="headerlink" href="#verizon_connect_api.api_types.DriverLogBookSettingsResponse.DriverLogBookSettings" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="verizon_connect_api.api_types.DriverLogBookSettingsResponse.Links">
+<span class="sig-name descname"><span class="pre">Links</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference internal" href="#verizon_connect_api.api_types.DriverLinks" title="verizon_connect_api.api_types.DriverLinks"><span class="pre">DriverLinks</span></a></em><a class="headerlink" href="#verizon_connect_api.api_types.DriverLogBookSettingsResponse.Links" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="verizon_connect_api.api_types.EngineControlModuleStatus">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">verizon_connect_api.api_types.</span></span><span class="sig-name descname"><span class="pre">EngineControlModuleStatus</span></span><a class="headerlink" href="#verizon_connect_api.api_types.EngineControlModuleStatus" title="Link to this definition"></a></dt>
+<dd><p>Bases: <a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.TypedDict" title="(in Python v3.12)"><code class="xref py py-class docutils literal notranslate"><span class="pre">TypedDict</span></code></a></p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="verizon_connect_api.api_types.EngineControlModuleStatus.BatteryLevel">
+<span class="sig-name descname"><span class="pre">BatteryLevel</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.12)"><span class="pre">float</span></a><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3/library/constants.html#None" title="(in Python v3.12)"><span class="pre">None</span></a></em><a class="headerlink" href="#verizon_connect_api.api_types.EngineControlModuleStatus.BatteryLevel" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="verizon_connect_api.api_types.EngineControlModuleStatus.CurrentOdometer">
+<span class="sig-name descname"><span class="pre">CurrentOdometer</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.12)"><span class="pre">float</span></a><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3/library/constants.html#None" title="(in Python v3.12)"><span class="pre">None</span></a></em><a class="headerlink" href="#verizon_connect_api.api_types.EngineControlModuleStatus.CurrentOdometer" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="verizon_connect_api.api_types.EngineControlModuleStatus.DTCs">
+<span class="sig-name descname"><span class="pre">DTCs</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#list" title="(in Python v3.12)"><span class="pre">list</span></a><span class="p"><span class="pre">[</span></span><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.12)"><span class="pre">str</span></a><span class="p"><span class="pre">]</span></span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3/library/constants.html#None" title="(in Python v3.12)"><span class="pre">None</span></a></em><a class="headerlink" href="#verizon_connect_api.api_types.EngineControlModuleStatus.DTCs" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="verizon_connect_api.api_types.EngineControlModuleStatus.DeviceTimeZoneOffset">
+<span class="sig-name descname"><span class="pre">DeviceTimeZoneOffset</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.12)"><span class="pre">int</span></a><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3/library/constants.html#None" title="(in Python v3.12)"><span class="pre">None</span></a></em><a class="headerlink" href="#verizon_connect_api.api_types.EngineControlModuleStatus.DeviceTimeZoneOffset" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="verizon_connect_api.api_types.EngineControlModuleStatus.DeviceTimeZoneUseDST">
+<span class="sig-name descname"><span class="pre">DeviceTimeZoneUseDST</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.12)"><span class="pre">bool</span></a><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3/library/constants.html#None" title="(in Python v3.12)"><span class="pre">None</span></a></em><a class="headerlink" href="#verizon_connect_api.api_types.EngineControlModuleStatus.DeviceTimeZoneUseDST" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="verizon_connect_api.api_types.EngineControlModuleStatus.DisplayState">
+<span class="sig-name descname"><span class="pre">DisplayState</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.12)"><span class="pre">str</span></a><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3/library/constants.html#None" title="(in Python v3.12)"><span class="pre">None</span></a></em><a class="headerlink" href="#verizon_connect_api.api_types.EngineControlModuleStatus.DisplayState" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="verizon_connect_api.api_types.EngineControlModuleStatus.DriverName">
+<span class="sig-name descname"><span class="pre">DriverName</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.12)"><span class="pre">str</span></a><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3/library/constants.html#None" title="(in Python v3.12)"><span class="pre">None</span></a></em><a class="headerlink" href="#verizon_connect_api.api_types.EngineControlModuleStatus.DriverName" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="verizon_connect_api.api_types.EngineControlModuleStatus.DriverNumber">
+<span class="sig-name descname"><span class="pre">DriverNumber</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.12)"><span class="pre">str</span></a><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3/library/constants.html#None" title="(in Python v3.12)"><span class="pre">None</span></a></em><a class="headerlink" href="#verizon_connect_api.api_types.EngineControlModuleStatus.DriverNumber" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="verizon_connect_api.api_types.EngineControlModuleStatus.EngineMintutes">
+<span class="sig-name descname"><span class="pre">EngineMintutes</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.12)"><span class="pre">int</span></a><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3/library/constants.html#None" title="(in Python v3.12)"><span class="pre">None</span></a></em><a class="headerlink" href="#verizon_connect_api.api_types.EngineControlModuleStatus.EngineMintutes" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="verizon_connect_api.api_types.EngineControlModuleStatus.FuelLevelPercentage">
+<span class="sig-name descname"><span class="pre">FuelLevelPercentage</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.12)"><span class="pre">float</span></a><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3/library/constants.html#None" title="(in Python v3.12)"><span class="pre">None</span></a></em><a class="headerlink" href="#verizon_connect_api.api_types.EngineControlModuleStatus.FuelLevelPercentage" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="verizon_connect_api.api_types.EngineControlModuleStatus.IdleTime">
+<span class="sig-name descname"><span class="pre">IdleTime</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.12)"><span class="pre">int</span></a><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3/library/constants.html#None" title="(in Python v3.12)"><span class="pre">None</span></a></em><a class="headerlink" href="#verizon_connect_api.api_types.EngineControlModuleStatus.IdleTime" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="verizon_connect_api.api_types.EngineControlModuleStatus.SensorValues">
+<span class="sig-name descname"><span class="pre">SensorValues</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#list" title="(in Python v3.12)"><span class="pre">list</span></a><span class="p"><span class="pre">[</span></span><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.12)"><span class="pre">str</span></a><span class="p"><span class="pre">]</span></span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3/library/constants.html#None" title="(in Python v3.12)"><span class="pre">None</span></a></em><a class="headerlink" href="#verizon_connect_api.api_types.EngineControlModuleStatus.SensorValues" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="verizon_connect_api.api_types.EngineControlModuleStatus.Speed">
+<span class="sig-name descname"><span class="pre">Speed</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.12)"><span class="pre">float</span></a><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3/library/constants.html#None" title="(in Python v3.12)"><span class="pre">None</span></a></em><a class="headerlink" href="#verizon_connect_api.api_types.EngineControlModuleStatus.Speed" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="verizon_connect_api.api_types.EngineControlModuleStatus.TotalFuelUsed">
+<span class="sig-name descname"><span class="pre">TotalFuelUsed</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.12)"><span class="pre">float</span></a><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3/library/constants.html#None" title="(in Python v3.12)"><span class="pre">None</span></a></em><a class="headerlink" href="#verizon_connect_api.api_types.EngineControlModuleStatus.TotalFuelUsed" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="verizon_connect_api.api_types.EngineControlModuleStatus.TotalIdleFuel">
+<span class="sig-name descname"><span class="pre">TotalIdleFuel</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.12)"><span class="pre">float</span></a><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3/library/constants.html#None" title="(in Python v3.12)"><span class="pre">None</span></a></em><a class="headerlink" href="#verizon_connect_api.api_types.EngineControlModuleStatus.TotalIdleFuel" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="verizon_connect_api.api_types.EngineControlModuleStatus.TotalPTOFuel">
+<span class="sig-name descname"><span class="pre">TotalPTOFuel</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.12)"><span class="pre">float</span></a><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3/library/constants.html#None" title="(in Python v3.12)"><span class="pre">None</span></a></em><a class="headerlink" href="#verizon_connect_api.api_types.EngineControlModuleStatus.TotalPTOFuel" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="verizon_connect_api.api_types.EngineControlModuleStatus.TotalPTOTime">
+<span class="sig-name descname"><span class="pre">TotalPTOTime</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.12)"><span class="pre">int</span></a><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3/library/constants.html#None" title="(in Python v3.12)"><span class="pre">None</span></a></em><a class="headerlink" href="#verizon_connect_api.api_types.EngineControlModuleStatus.TotalPTOTime" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="verizon_connect_api.api_types.EngineControlModuleStatus.TractionBatteryChargingLastStartUtc">
+<span class="sig-name descname"><span class="pre">TractionBatteryChargingLastStartUtc</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.12)"><span class="pre">str</span></a><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3/library/constants.html#None" title="(in Python v3.12)"><span class="pre">None</span></a></em><a class="headerlink" href="#verizon_connect_api.api_types.EngineControlModuleStatus.TractionBatteryChargingLastStartUtc" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="verizon_connect_api.api_types.EngineControlModuleStatus.TractionBatteryChargingUtc">
+<span class="sig-name descname"><span class="pre">TractionBatteryChargingUtc</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.12)"><span class="pre">str</span></a><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3/library/constants.html#None" title="(in Python v3.12)"><span class="pre">None</span></a></em><a class="headerlink" href="#verizon_connect_api.api_types.EngineControlModuleStatus.TractionBatteryChargingUtc" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="verizon_connect_api.api_types.EngineControlModuleStatus.UpdateUTC">
+<span class="sig-name descname"><span class="pre">UpdateUTC</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.12)"><span class="pre">str</span></a><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3/library/constants.html#None" title="(in Python v3.12)"><span class="pre">None</span></a></em><a class="headerlink" href="#verizon_connect_api.api_types.EngineControlModuleStatus.UpdateUTC" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="verizon_connect_api.api_types.EngineControlModuleStatus.VIN">
+<span class="sig-name descname"><span class="pre">VIN</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.12)"><span class="pre">str</span></a></em><a class="headerlink" href="#verizon_connect_api.api_types.EngineControlModuleStatus.VIN" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="verizon_connect_api.api_types.Link">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">verizon_connect_api.api_types.</span></span><span class="sig-name descname"><span class="pre">Link</span></span><a class="headerlink" href="#verizon_connect_api.api_types.Link" title="Link to this definition"></a></dt>
+<dd><p>Bases: <a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.TypedDict" title="(in Python v3.12)"><code class="xref py py-class docutils literal notranslate"><span class="pre">TypedDict</span></code></a></p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="verizon_connect_api.api_types.Link.Href">
+<span class="sig-name descname"><span class="pre">Href</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.12)"><span class="pre">str</span></a></em><a class="headerlink" href="#verizon_connect_api.api_types.Link.Href" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="verizon_connect_api.api_types.LinkLowercase">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">verizon_connect_api.api_types.</span></span><span class="sig-name descname"><span class="pre">LinkLowercase</span></span><a class="headerlink" href="#verizon_connect_api.api_types.LinkLowercase" title="Link to this definition"></a></dt>
+<dd><p>Bases: <a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.TypedDict" title="(in Python v3.12)"><code class="xref py py-class docutils literal notranslate"><span class="pre">TypedDict</span></code></a></p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="verizon_connect_api.api_types.LinkLowercase.href">
+<span class="sig-name descname"><span class="pre">href</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.12)"><span class="pre">str</span></a></em><a class="headerlink" href="#verizon_connect_api.api_types.LinkLowercase.href" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="verizon_connect_api.api_types.LocationStatus">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">verizon_connect_api.api_types.</span></span><span class="sig-name descname"><span class="pre">LocationStatus</span></span><a class="headerlink" href="#verizon_connect_api.api_types.LocationStatus" title="Link to this definition"></a></dt>
+<dd><p>Bases: <a class="reference internal" href="#verizon_connect_api.api_types.Coordinates" title="verizon_connect_api.api_types.Coordinates"><code class="xref py py-class docutils literal notranslate"><span class="pre">Coordinates</span></code></a>, <a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.TypedDict" title="(in Python v3.12)"><code class="xref py py-class docutils literal notranslate"><span class="pre">TypedDict</span></code></a></p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="verizon_connect_api.api_types.LocationStatus.Address">
+<span class="sig-name descname"><span class="pre">Address</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference internal" href="#verizon_connect_api.api_types.Address" title="verizon_connect_api.api_types.Address"><span class="pre">Address</span></a></em><a class="headerlink" href="#verizon_connect_api.api_types.LocationStatus.Address" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="verizon_connect_api.api_types.LocationStatus.DeltaDistance">
+<span class="sig-name descname"><span class="pre">DeltaDistance</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.12)"><span class="pre">float</span></a></em><a class="headerlink" href="#verizon_connect_api.api_types.LocationStatus.DeltaDistance" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="verizon_connect_api.api_types.LocationStatus.DeltaTime">
+<span class="sig-name descname"><span class="pre">DeltaTime</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.12)"><span class="pre">int</span></a></em><a class="headerlink" href="#verizon_connect_api.api_types.LocationStatus.DeltaTime" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="verizon_connect_api.api_types.LocationStatus.DeviceTimeZoneOffset">
+<span class="sig-name descname"><span class="pre">DeviceTimeZoneOffset</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.12)"><span class="pre">int</span></a><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3/library/constants.html#None" title="(in Python v3.12)"><span class="pre">None</span></a></em><a class="headerlink" href="#verizon_connect_api.api_types.LocationStatus.DeviceTimeZoneOffset" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="verizon_connect_api.api_types.LocationStatus.DeviceTimeZoneUseDST">
+<span class="sig-name descname"><span class="pre">DeviceTimeZoneUseDST</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.12)"><span class="pre">bool</span></a></em><a class="headerlink" href="#verizon_connect_api.api_types.LocationStatus.DeviceTimeZoneUseDST" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="verizon_connect_api.api_types.LocationStatus.Direction">
+<span class="sig-name descname"><span class="pre">Direction</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.12)"><span class="pre">int</span></a></em><a class="headerlink" href="#verizon_connect_api.api_types.LocationStatus.Direction" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="verizon_connect_api.api_types.LocationStatus.DisplayState">
+<span class="sig-name descname"><span class="pre">DisplayState</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.12)"><span class="pre">str</span></a></em><a class="headerlink" href="#verizon_connect_api.api_types.LocationStatus.DisplayState" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="verizon_connect_api.api_types.LocationStatus.DriverNumber">
+<span class="sig-name descname"><span class="pre">DriverNumber</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.12)"><span class="pre">str</span></a><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3/library/constants.html#None" title="(in Python v3.12)"><span class="pre">None</span></a></em><a class="headerlink" href="#verizon_connect_api.api_types.LocationStatus.DriverNumber" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="verizon_connect_api.api_types.LocationStatus.GeoFenceName">
+<span class="sig-name descname"><span class="pre">GeoFenceName</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.12)"><span class="pre">str</span></a><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3/library/constants.html#None" title="(in Python v3.12)"><span class="pre">None</span></a></em><a class="headerlink" href="#verizon_connect_api.api_types.LocationStatus.GeoFenceName" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="verizon_connect_api.api_types.LocationStatus.Heading">
+<span class="sig-name descname"><span class="pre">Heading</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.12)"><span class="pre">str</span></a></em><a class="headerlink" href="#verizon_connect_api.api_types.LocationStatus.Heading" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="verizon_connect_api.api_types.LocationStatus.IsPrivate">
+<span class="sig-name descname"><span class="pre">IsPrivate</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.12)"><span class="pre">bool</span></a></em><a class="headerlink" href="#verizon_connect_api.api_types.LocationStatus.IsPrivate" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="verizon_connect_api.api_types.LocationStatus.Latitude">
+<span class="sig-name descname"><span class="pre">Latitude</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.12)"><span class="pre">float</span></a></em><a class="headerlink" href="#verizon_connect_api.api_types.LocationStatus.Latitude" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="verizon_connect_api.api_types.LocationStatus.Longitude">
+<span class="sig-name descname"><span class="pre">Longitude</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.12)"><span class="pre">float</span></a></em><a class="headerlink" href="#verizon_connect_api.api_types.LocationStatus.Longitude" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="verizon_connect_api.api_types.LocationStatus.Speed">
+<span class="sig-name descname"><span class="pre">Speed</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.12)"><span class="pre">float</span></a></em><a class="headerlink" href="#verizon_connect_api.api_types.LocationStatus.Speed" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="verizon_connect_api.api_types.LocationStatus.UpdateUTC">
+<span class="sig-name descname"><span class="pre">UpdateUTC</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.12)"><span class="pre">str</span></a></em><a class="headerlink" href="#verizon_connect_api.api_types.LocationStatus.UpdateUTC" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="verizon_connect_api.api_types.PartialDriver">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">verizon_connect_api.api_types.</span></span><span class="sig-name descname"><span class="pre">PartialDriver</span></span><a class="headerlink" href="#verizon_connect_api.api_types.PartialDriver" title="Link to this definition"></a></dt>
+<dd><p>Bases: <a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.TypedDict" title="(in Python v3.12)"><code class="xref py py-class docutils literal notranslate"><span class="pre">TypedDict</span></code></a></p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="verizon_connect_api.api_types.PartialDriver.FirstName">
+<span class="sig-name descname"><span class="pre">FirstName</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.12)"><span class="pre">str</span></a></em><a class="headerlink" href="#verizon_connect_api.api_types.PartialDriver.FirstName" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="verizon_connect_api.api_types.PartialDriver.LastName">
+<span class="sig-name descname"><span class="pre">LastName</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.12)"><span class="pre">str</span></a></em><a class="headerlink" href="#verizon_connect_api.api_types.PartialDriver.LastName" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="verizon_connect_api.api_types.PartialDriver.Number">
+<span class="sig-name descname"><span class="pre">Number</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.12)"><span class="pre">str</span></a><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3/library/constants.html#None" title="(in Python v3.12)"><span class="pre">None</span></a></em><a class="headerlink" href="#verizon_connect_api.api_types.PartialDriver.Number" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="verizon_connect_api.api_types.PartialVehicle">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">verizon_connect_api.api_types.</span></span><span class="sig-name descname"><span class="pre">PartialVehicle</span></span><a class="headerlink" href="#verizon_connect_api.api_types.PartialVehicle" title="Link to this definition"></a></dt>
+<dd><p>Bases: <a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.TypedDict" title="(in Python v3.12)"><code class="xref py py-class docutils literal notranslate"><span class="pre">TypedDict</span></code></a></p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="verizon_connect_api.api_types.PartialVehicle.Name">
+<span class="sig-name descname"><span class="pre">Name</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.12)"><span class="pre">str</span></a></em><a class="headerlink" href="#verizon_connect_api.api_types.PartialVehicle.Name" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="verizon_connect_api.api_types.PartialVehicle.Number">
+<span class="sig-name descname"><span class="pre">Number</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.12)"><span class="pre">str</span></a><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3/library/constants.html#None" title="(in Python v3.12)"><span class="pre">None</span></a></em><a class="headerlink" href="#verizon_connect_api.api_types.PartialVehicle.Number" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="verizon_connect_api.api_types.Segment">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">verizon_connect_api.api_types.</span></span><span class="sig-name descname"><span class="pre">Segment</span></span><a class="headerlink" href="#verizon_connect_api.api_types.Segment" title="Link to this definition"></a></dt>
+<dd><p>Bases: <a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.TypedDict" title="(in Python v3.12)"><code class="xref py py-class docutils literal notranslate"><span class="pre">TypedDict</span></code></a></p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="verizon_connect_api.api_types.Segment.DistanceKilometers">
+<span class="sig-name descname"><span class="pre">DistanceKilometers</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.12)"><span class="pre">float</span></a><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3/library/constants.html#None" title="(in Python v3.12)"><span class="pre">None</span></a></em><a class="headerlink" href="#verizon_connect_api.api_types.Segment.DistanceKilometers" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="verizon_connect_api.api_types.Segment.EndDateUtc">
+<span class="sig-name descname"><span class="pre">EndDateUtc</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.12)"><span class="pre">str</span></a><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3/library/constants.html#None" title="(in Python v3.12)"><span class="pre">None</span></a></em><a class="headerlink" href="#verizon_connect_api.api_types.Segment.EndDateUtc" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="verizon_connect_api.api_types.Segment.EndLocation">
+<span class="sig-name descname"><span class="pre">EndLocation</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference internal" href="#verizon_connect_api.api_types.AddressWithCoordinates" title="verizon_connect_api.api_types.AddressWithCoordinates"><span class="pre">AddressWithCoordinates</span></a><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3/library/constants.html#None" title="(in Python v3.12)"><span class="pre">None</span></a></em><a class="headerlink" href="#verizon_connect_api.api_types.Segment.EndLocation" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="verizon_connect_api.api_types.Segment.EndLocationIsPrivate">
+<span class="sig-name descname"><span class="pre">EndLocationIsPrivate</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.12)"><span class="pre">bool</span></a><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3/library/constants.html#None" title="(in Python v3.12)"><span class="pre">None</span></a></em><a class="headerlink" href="#verizon_connect_api.api_types.Segment.EndLocationIsPrivate" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="verizon_connect_api.api_types.Segment.IsComplete">
+<span class="sig-name descname"><span class="pre">IsComplete</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.12)"><span class="pre">bool</span></a></em><a class="headerlink" href="#verizon_connect_api.api_types.Segment.IsComplete" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="verizon_connect_api.api_types.Segment.StartDateUtc">
+<span class="sig-name descname"><span class="pre">StartDateUtc</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.12)"><span class="pre">str</span></a></em><a class="headerlink" href="#verizon_connect_api.api_types.Segment.StartDateUtc" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="verizon_connect_api.api_types.Segment.StartLocation">
+<span class="sig-name descname"><span class="pre">StartLocation</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference internal" href="#verizon_connect_api.api_types.AddressWithCoordinates" title="verizon_connect_api.api_types.AddressWithCoordinates"><span class="pre">AddressWithCoordinates</span></a></em><a class="headerlink" href="#verizon_connect_api.api_types.Segment.StartLocation" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="verizon_connect_api.api_types.Segment.StartLocationIsPrivate">
+<span class="sig-name descname"><span class="pre">StartLocationIsPrivate</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.12)"><span class="pre">bool</span></a></em><a class="headerlink" href="#verizon_connect_api.api_types.Segment.StartLocationIsPrivate" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="verizon_connect_api.api_types.SegmentHistory">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">verizon_connect_api.api_types.</span></span><span class="sig-name descname"><span class="pre">SegmentHistory</span></span><a class="headerlink" href="#verizon_connect_api.api_types.SegmentHistory" title="Link to this definition"></a></dt>
+<dd><p>Bases: <a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.TypedDict" title="(in Python v3.12)"><code class="xref py py-class docutils literal notranslate"><span class="pre">TypedDict</span></code></a></p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="verizon_connect_api.api_types.SegmentHistory.Driver">
+<span class="sig-name descname"><span class="pre">Driver</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference internal" href="#verizon_connect_api.api_types.PartialDriver" title="verizon_connect_api.api_types.PartialDriver"><span class="pre">PartialDriver</span></a><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3/library/constants.html#None" title="(in Python v3.12)"><span class="pre">None</span></a></em><a class="headerlink" href="#verizon_connect_api.api_types.SegmentHistory.Driver" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="verizon_connect_api.api_types.SegmentHistory.Segments">
+<span class="sig-name descname"><span class="pre">Segments</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#list" title="(in Python v3.12)"><span class="pre">list</span></a><span class="p"><span class="pre">[</span></span><a class="reference internal" href="#verizon_connect_api.api_types.Segment" title="verizon_connect_api.api_types.Segment"><span class="pre">Segment</span></a><span class="p"><span class="pre">]</span></span></em><a class="headerlink" href="#verizon_connect_api.api_types.SegmentHistory.Segments" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="verizon_connect_api.api_types.SegmentHistory.Vehicle">
+<span class="sig-name descname"><span class="pre">Vehicle</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference internal" href="#verizon_connect_api.api_types.PartialVehicle" title="verizon_connect_api.api_types.PartialVehicle"><span class="pre">PartialVehicle</span></a><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3/library/constants.html#None" title="(in Python v3.12)"><span class="pre">None</span></a></em><a class="headerlink" href="#verizon_connect_api.api_types.SegmentHistory.Vehicle" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="verizon_connect_api.api_types.User">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">verizon_connect_api.api_types.</span></span><span class="sig-name descname"><span class="pre">User</span></span><a class="headerlink" href="#verizon_connect_api.api_types.User" title="Link to this definition"></a></dt>
+<dd><p>Bases: <a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.TypedDict" title="(in Python v3.12)"><code class="xref py py-class docutils literal notranslate"><span class="pre">TypedDict</span></code></a></p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="verizon_connect_api.api_types.User.EmailAddress">
+<span class="sig-name descname"><span class="pre">EmailAddress</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.12)"><span class="pre">str</span></a></em><a class="headerlink" href="#verizon_connect_api.api_types.User.EmailAddress" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="verizon_connect_api.api_types.User.EmployeeId">
+<span class="sig-name descname"><span class="pre">EmployeeId</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.12)"><span class="pre">int</span></a><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3/library/constants.html#None" title="(in Python v3.12)"><span class="pre">None</span></a></em><a class="headerlink" href="#verizon_connect_api.api_types.User.EmployeeId" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="verizon_connect_api.api_types.User.FirstName">
+<span class="sig-name descname"><span class="pre">FirstName</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.12)"><span class="pre">str</span></a></em><a class="headerlink" href="#verizon_connect_api.api_types.User.FirstName" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="verizon_connect_api.api_types.User.IsAdministrator">
+<span class="sig-name descname"><span class="pre">IsAdministrator</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.12)"><span class="pre">bool</span></a></em><a class="headerlink" href="#verizon_connect_api.api_types.User.IsAdministrator" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="verizon_connect_api.api_types.User.IsDriver">
+<span class="sig-name descname"><span class="pre">IsDriver</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.12)"><span class="pre">bool</span></a></em><a class="headerlink" href="#verizon_connect_api.api_types.User.IsDriver" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="verizon_connect_api.api_types.User.IsRegionalAdministrator">
+<span class="sig-name descname"><span class="pre">IsRegionalAdministrator</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.12)"><span class="pre">bool</span></a></em><a class="headerlink" href="#verizon_connect_api.api_types.User.IsRegionalAdministrator" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="verizon_connect_api.api_types.User.LastName">
+<span class="sig-name descname"><span class="pre">LastName</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.12)"><span class="pre">str</span></a></em><a class="headerlink" href="#verizon_connect_api.api_types.User.LastName" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="verizon_connect_api.api_types.User.Role">
+<span class="sig-name descname"><span class="pre">Role</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.12)"><span class="pre">str</span></a><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3/library/constants.html#None" title="(in Python v3.12)"><span class="pre">None</span></a></em><a class="headerlink" href="#verizon_connect_api.api_types.User.Role" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="verizon_connect_api.api_types.UserDetails">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">verizon_connect_api.api_types.</span></span><span class="sig-name descname"><span class="pre">UserDetails</span></span><a class="headerlink" href="#verizon_connect_api.api_types.UserDetails" title="Link to this definition"></a></dt>
+<dd><p>Bases: <a class="reference internal" href="#verizon_connect_api.api_types.User" title="verizon_connect_api.api_types.User"><code class="xref py py-class docutils literal notranslate"><span class="pre">User</span></code></a>, <a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.TypedDict" title="(in Python v3.12)"><code class="xref py py-class docutils literal notranslate"><span class="pre">TypedDict</span></code></a></p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="verizon_connect_api.api_types.UserDetails.DriverNumber">
+<span class="sig-name descname"><span class="pre">DriverNumber</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.12)"><span class="pre">str</span></a><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3/library/constants.html#None" title="(in Python v3.12)"><span class="pre">None</span></a></em><a class="headerlink" href="#verizon_connect_api.api_types.UserDetails.DriverNumber" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="verizon_connect_api.api_types.UserDetails.EmailAddress">
+<span class="sig-name descname"><span class="pre">EmailAddress</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.12)"><span class="pre">str</span></a></em><a class="headerlink" href="#verizon_connect_api.api_types.UserDetails.EmailAddress" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="verizon_connect_api.api_types.UserDetails.EmployeeId">
+<span class="sig-name descname"><span class="pre">EmployeeId</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.12)"><span class="pre">int</span></a><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3/library/constants.html#None" title="(in Python v3.12)"><span class="pre">None</span></a></em><a class="headerlink" href="#verizon_connect_api.api_types.UserDetails.EmployeeId" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="verizon_connect_api.api_types.UserDetails.FirstName">
+<span class="sig-name descname"><span class="pre">FirstName</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.12)"><span class="pre">str</span></a></em><a class="headerlink" href="#verizon_connect_api.api_types.UserDetails.FirstName" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="verizon_connect_api.api_types.UserDetails.IsAdministrator">
+<span class="sig-name descname"><span class="pre">IsAdministrator</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.12)"><span class="pre">bool</span></a></em><a class="headerlink" href="#verizon_connect_api.api_types.UserDetails.IsAdministrator" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="verizon_connect_api.api_types.UserDetails.IsDriver">
+<span class="sig-name descname"><span class="pre">IsDriver</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.12)"><span class="pre">bool</span></a></em><a class="headerlink" href="#verizon_connect_api.api_types.UserDetails.IsDriver" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="verizon_connect_api.api_types.UserDetails.IsRegionalAdministrator">
+<span class="sig-name descname"><span class="pre">IsRegionalAdministrator</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.12)"><span class="pre">bool</span></a></em><a class="headerlink" href="#verizon_connect_api.api_types.UserDetails.IsRegionalAdministrator" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="verizon_connect_api.api_types.UserDetails.Language">
+<span class="sig-name descname"><span class="pre">Language</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.12)"><span class="pre">str</span></a></em><a class="headerlink" href="#verizon_connect_api.api_types.UserDetails.Language" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="verizon_connect_api.api_types.UserDetails.LastName">
+<span class="sig-name descname"><span class="pre">LastName</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.12)"><span class="pre">str</span></a></em><a class="headerlink" href="#verizon_connect_api.api_types.UserDetails.LastName" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="verizon_connect_api.api_types.UserDetails.MobileNumber">
+<span class="sig-name descname"><span class="pre">MobileNumber</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.12)"><span class="pre">str</span></a><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3/library/constants.html#None" title="(in Python v3.12)"><span class="pre">None</span></a></em><a class="headerlink" href="#verizon_connect_api.api_types.UserDetails.MobileNumber" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="verizon_connect_api.api_types.UserDetails.Region">
+<span class="sig-name descname"><span class="pre">Region</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.12)"><span class="pre">str</span></a></em><a class="headerlink" href="#verizon_connect_api.api_types.UserDetails.Region" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="verizon_connect_api.api_types.UserDetails.Role">
+<span class="sig-name descname"><span class="pre">Role</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.12)"><span class="pre">str</span></a><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3/library/constants.html#None" title="(in Python v3.12)"><span class="pre">None</span></a></em><a class="headerlink" href="#verizon_connect_api.api_types.UserDetails.Role" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="verizon_connect_api.api_types.UserDetails.TimeZone">
+<span class="sig-name descname"><span class="pre">TimeZone</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.12)"><span class="pre">str</span></a></em><a class="headerlink" href="#verizon_connect_api.api_types.UserDetails.TimeZone" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="verizon_connect_api.api_types.UserDetails.UserApiInsteadOfSts">
+<span class="sig-name descname"><span class="pre">UserApiInsteadOfSts</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.12)"><span class="pre">bool</span></a></em><a class="headerlink" href="#verizon_connect_api.api_types.UserDetails.UserApiInsteadOfSts" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="verizon_connect_api.api_types.UserLinks">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">verizon_connect_api.api_types.</span></span><span class="sig-name descname"><span class="pre">UserLinks</span></span><a class="headerlink" href="#verizon_connect_api.api_types.UserLinks" title="Link to this definition"></a></dt>
+<dd><p>Bases: <a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.TypedDict" title="(in Python v3.12)"><code class="xref py py-class docutils literal notranslate"><span class="pre">TypedDict</span></code></a></p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="verizon_connect_api.api_types.UserLinks.groups">
+<span class="sig-name descname"><span class="pre">groups</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference internal" href="#verizon_connect_api.api_types.LinkLowercase" title="verizon_connect_api.api_types.LinkLowercase"><span class="pre">LinkLowercase</span></a></em><a class="headerlink" href="#verizon_connect_api.api_types.UserLinks.groups" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="verizon_connect_api.api_types.UserLinks.self">
+<span class="sig-name descname"><span class="pre">self</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference internal" href="#verizon_connect_api.api_types.LinkLowercase" title="verizon_connect_api.api_types.LinkLowercase"><span class="pre">LinkLowercase</span></a></em><a class="headerlink" href="#verizon_connect_api.api_types.UserLinks.self" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="verizon_connect_api.api_types.UserResponse">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">verizon_connect_api.api_types.</span></span><span class="sig-name descname"><span class="pre">UserResponse</span></span><a class="headerlink" href="#verizon_connect_api.api_types.UserResponse" title="Link to this definition"></a></dt>
+<dd><p>Bases: <a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.TypedDict" title="(in Python v3.12)"><code class="xref py py-class docutils literal notranslate"><span class="pre">TypedDict</span></code></a></p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="verizon_connect_api.api_types.UserResponse.user">
+<span class="sig-name descname"><span class="pre">user</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference internal" href="#verizon_connect_api.api_types.User" title="verizon_connect_api.api_types.User"><span class="pre">User</span></a><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><a class="reference internal" href="#verizon_connect_api.api_types.UserDetails" title="verizon_connect_api.api_types.UserDetails"><span class="pre">UserDetails</span></a></em><a class="headerlink" href="#verizon_connect_api.api_types.UserResponse.user" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="verizon_connect_api.api_types.Vehicle">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">verizon_connect_api.api_types.</span></span><span class="sig-name descname"><span class="pre">Vehicle</span></span><a class="headerlink" href="#verizon_connect_api.api_types.Vehicle" title="Link to this definition"></a></dt>
+<dd><p>Bases: <a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.TypedDict" title="(in Python v3.12)"><code class="xref py py-class docutils literal notranslate"><span class="pre">TypedDict</span></code></a></p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="verizon_connect_api.api_types.Vehicle.CityMPG">
+<span class="sig-name descname"><span class="pre">CityMPG</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.12)"><span class="pre">float</span></a><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3/library/constants.html#None" title="(in Python v3.12)"><span class="pre">None</span></a></em><a class="headerlink" href="#verizon_connect_api.api_types.Vehicle.CityMPG" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="verizon_connect_api.api_types.Vehicle.FuelType">
+<span class="sig-name descname"><span class="pre">FuelType</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.12)"><span class="pre">int</span></a></em><a class="headerlink" href="#verizon_connect_api.api_types.Vehicle.FuelType" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="verizon_connect_api.api_types.Vehicle.HasNavigationDevice">
+<span class="sig-name descname"><span class="pre">HasNavigationDevice</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.12)"><span class="pre">bool</span></a></em><a class="headerlink" href="#verizon_connect_api.api_types.Vehicle.HasNavigationDevice" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="verizon_connect_api.api_types.Vehicle.HasTachograph">
+<span class="sig-name descname"><span class="pre">HasTachograph</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.12)"><span class="pre">bool</span></a></em><a class="headerlink" href="#verizon_connect_api.api_types.Vehicle.HasTachograph" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="verizon_connect_api.api_types.Vehicle.HighwayMPG">
+<span class="sig-name descname"><span class="pre">HighwayMPG</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.12)"><span class="pre">float</span></a><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3/library/constants.html#None" title="(in Python v3.12)"><span class="pre">None</span></a></em><a class="headerlink" href="#verizon_connect_api.api_types.Vehicle.HighwayMPG" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="verizon_connect_api.api_types.Vehicle.Make">
+<span class="sig-name descname"><span class="pre">Make</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.12)"><span class="pre">str</span></a><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3/library/constants.html#None" title="(in Python v3.12)"><span class="pre">None</span></a></em><a class="headerlink" href="#verizon_connect_api.api_types.Vehicle.Make" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="verizon_connect_api.api_types.Vehicle.Model">
+<span class="sig-name descname"><span class="pre">Model</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.12)"><span class="pre">str</span></a><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3/library/constants.html#None" title="(in Python v3.12)"><span class="pre">None</span></a></em><a class="headerlink" href="#verizon_connect_api.api_types.Vehicle.Model" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="verizon_connect_api.api_types.Vehicle.Name">
+<span class="sig-name descname"><span class="pre">Name</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.12)"><span class="pre">str</span></a></em><a class="headerlink" href="#verizon_connect_api.api_types.Vehicle.Name" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="verizon_connect_api.api_types.Vehicle.RegistrationNumber">
+<span class="sig-name descname"><span class="pre">RegistrationNumber</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.12)"><span class="pre">str</span></a><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3/library/constants.html#None" title="(in Python v3.12)"><span class="pre">None</span></a></em><a class="headerlink" href="#verizon_connect_api.api_types.Vehicle.RegistrationNumber" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="verizon_connect_api.api_types.Vehicle.TankCapacity">
+<span class="sig-name descname"><span class="pre">TankCapacity</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.12)"><span class="pre">float</span></a><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3/library/constants.html#None" title="(in Python v3.12)"><span class="pre">None</span></a></em><a class="headerlink" href="#verizon_connect_api.api_types.Vehicle.TankCapacity" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="verizon_connect_api.api_types.Vehicle.VIN">
+<span class="sig-name descname"><span class="pre">VIN</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.12)"><span class="pre">str</span></a><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3/library/constants.html#None" title="(in Python v3.12)"><span class="pre">None</span></a></em><a class="headerlink" href="#verizon_connect_api.api_types.Vehicle.VIN" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="verizon_connect_api.api_types.Vehicle.VehicleNumber">
+<span class="sig-name descname"><span class="pre">VehicleNumber</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.12)"><span class="pre">str</span></a><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3/library/constants.html#None" title="(in Python v3.12)"><span class="pre">None</span></a></em><a class="headerlink" href="#verizon_connect_api.api_types.Vehicle.VehicleNumber" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="verizon_connect_api.api_types.Vehicle.VehicleSize">
+<span class="sig-name descname"><span class="pre">VehicleSize</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.12)"><span class="pre">int</span></a></em><a class="headerlink" href="#verizon_connect_api.api_types.Vehicle.VehicleSize" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="verizon_connect_api.api_types.Vehicle.Year">
+<span class="sig-name descname"><span class="pre">Year</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.12)"><span class="pre">int</span></a><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3/library/constants.html#None" title="(in Python v3.12)"><span class="pre">None</span></a></em><a class="headerlink" href="#verizon_connect_api.api_types.Vehicle.Year" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="verizon_connect_api.api_types.VehicleGPSLocation">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">verizon_connect_api.api_types.</span></span><span class="sig-name descname"><span class="pre">VehicleGPSLocation</span></span><a class="headerlink" href="#verizon_connect_api.api_types.VehicleGPSLocation" title="Link to this definition"></a></dt>
+<dd><p>Bases: <a class="reference internal" href="#verizon_connect_api.api_types.Coordinates" title="verizon_connect_api.api_types.Coordinates"><code class="xref py py-class docutils literal notranslate"><span class="pre">Coordinates</span></code></a>, <a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.TypedDict" title="(in Python v3.12)"><code class="xref py py-class docutils literal notranslate"><span class="pre">TypedDict</span></code></a></p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="verizon_connect_api.api_types.VehicleGPSLocation.Address">
+<span class="sig-name descname"><span class="pre">Address</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference internal" href="#verizon_connect_api.api_types.Address" title="verizon_connect_api.api_types.Address"><span class="pre">Address</span></a></em><a class="headerlink" href="#verizon_connect_api.api_types.VehicleGPSLocation.Address" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="verizon_connect_api.api_types.VehicleGPSLocation.BatteryLevel">
+<span class="sig-name descname"><span class="pre">BatteryLevel</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.12)"><span class="pre">float</span></a><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3/library/constants.html#None" title="(in Python v3.12)"><span class="pre">None</span></a></em><a class="headerlink" href="#verizon_connect_api.api_types.VehicleGPSLocation.BatteryLevel" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="verizon_connect_api.api_types.VehicleGPSLocation.DriverNumber">
+<span class="sig-name descname"><span class="pre">DriverNumber</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.12)"><span class="pre">str</span></a><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3/library/constants.html#None" title="(in Python v3.12)"><span class="pre">None</span></a></em><a class="headerlink" href="#verizon_connect_api.api_types.VehicleGPSLocation.DriverNumber" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="verizon_connect_api.api_types.VehicleGPSLocation.FirstName">
+<span class="sig-name descname"><span class="pre">FirstName</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.12)"><span class="pre">str</span></a><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3/library/constants.html#None" title="(in Python v3.12)"><span class="pre">None</span></a></em><a class="headerlink" href="#verizon_connect_api.api_types.VehicleGPSLocation.FirstName" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="verizon_connect_api.api_types.VehicleGPSLocation.IsPrivate">
+<span class="sig-name descname"><span class="pre">IsPrivate</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.12)"><span class="pre">bool</span></a></em><a class="headerlink" href="#verizon_connect_api.api_types.VehicleGPSLocation.IsPrivate" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="verizon_connect_api.api_types.VehicleGPSLocation.LastName">
+<span class="sig-name descname"><span class="pre">LastName</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.12)"><span class="pre">str</span></a><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3/library/constants.html#None" title="(in Python v3.12)"><span class="pre">None</span></a></em><a class="headerlink" href="#verizon_connect_api.api_types.VehicleGPSLocation.LastName" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="verizon_connect_api.api_types.VehicleGPSLocation.Latitude">
+<span class="sig-name descname"><span class="pre">Latitude</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.12)"><span class="pre">float</span></a></em><a class="headerlink" href="#verizon_connect_api.api_types.VehicleGPSLocation.Latitude" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="verizon_connect_api.api_types.VehicleGPSLocation.Longitude">
+<span class="sig-name descname"><span class="pre">Longitude</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.12)"><span class="pre">float</span></a></em><a class="headerlink" href="#verizon_connect_api.api_types.VehicleGPSLocation.Longitude" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="verizon_connect_api.api_types.VehicleGPSLocation.OdometerInKM">
+<span class="sig-name descname"><span class="pre">OdometerInKM</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.12)"><span class="pre">float</span></a></em><a class="headerlink" href="#verizon_connect_api.api_types.VehicleGPSLocation.OdometerInKM" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="verizon_connect_api.api_types.VehicleGPSLocation.Speed">
+<span class="sig-name descname"><span class="pre">Speed</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.12)"><span class="pre">float</span></a></em><a class="headerlink" href="#verizon_connect_api.api_types.VehicleGPSLocation.Speed" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="verizon_connect_api.api_types.VehicleGPSLocation.TractionBatteryChargingLastStartUtc">
+<span class="sig-name descname"><span class="pre">TractionBatteryChargingLastStartUtc</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.12)"><span class="pre">str</span></a><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3/library/constants.html#None" title="(in Python v3.12)"><span class="pre">None</span></a></em><a class="headerlink" href="#verizon_connect_api.api_types.VehicleGPSLocation.TractionBatteryChargingLastStartUtc" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="verizon_connect_api.api_types.VehicleGPSLocation.TractionBatteryChargingUtc">
+<span class="sig-name descname"><span class="pre">TractionBatteryChargingUtc</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.12)"><span class="pre">str</span></a><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3/library/constants.html#None" title="(in Python v3.12)"><span class="pre">None</span></a></em><a class="headerlink" href="#verizon_connect_api.api_types.VehicleGPSLocation.TractionBatteryChargingUtc" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="verizon_connect_api.api_types.VehicleGPSLocation.UpdateUtc">
+<span class="sig-name descname"><span class="pre">UpdateUtc</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.12)"><span class="pre">str</span></a></em><a class="headerlink" href="#verizon_connect_api.api_types.VehicleGPSLocation.UpdateUtc" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="verizon_connect_api.api_types.VehicleGPSLocation.VehicleName">
+<span class="sig-name descname"><span class="pre">VehicleName</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.12)"><span class="pre">str</span></a></em><a class="headerlink" href="#verizon_connect_api.api_types.VehicleGPSLocation.VehicleName" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="verizon_connect_api.api_types.VehicleGPSLocation.VehicleNumber">
+<span class="sig-name descname"><span class="pre">VehicleNumber</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.12)"><span class="pre">str</span></a></em><a class="headerlink" href="#verizon_connect_api.api_types.VehicleGPSLocation.VehicleNumber" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="verizon_connect_api.api_types.VehicleStatus">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">verizon_connect_api.api_types.</span></span><span class="sig-name descname"><span class="pre">VehicleStatus</span></span><a class="headerlink" href="#verizon_connect_api.api_types.VehicleStatus" title="Link to this definition"></a></dt>
+<dd><p>Bases: <a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.TypedDict" title="(in Python v3.12)"><code class="xref py py-class docutils literal notranslate"><span class="pre">TypedDict</span></code></a></p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="verizon_connect_api.api_types.VehicleStatus.BatteryLevel">
+<span class="sig-name descname"><span class="pre">BatteryLevel</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.12)"><span class="pre">float</span></a><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3/library/constants.html#None" title="(in Python v3.12)"><span class="pre">None</span></a></em><a class="headerlink" href="#verizon_connect_api.api_types.VehicleStatus.BatteryLevel" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="verizon_connect_api.api_types.VehicleStatus.CurrentOdometer">
+<span class="sig-name descname"><span class="pre">CurrentOdometer</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.12)"><span class="pre">float</span></a></em><a class="headerlink" href="#verizon_connect_api.api_types.VehicleStatus.CurrentOdometer" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="verizon_connect_api.api_types.VehicleStatus.DeviceTimeZoneOffset">
+<span class="sig-name descname"><span class="pre">DeviceTimeZoneOffset</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.12)"><span class="pre">int</span></a><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3/library/constants.html#None" title="(in Python v3.12)"><span class="pre">None</span></a></em><a class="headerlink" href="#verizon_connect_api.api_types.VehicleStatus.DeviceTimeZoneOffset" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="verizon_connect_api.api_types.VehicleStatus.DeviceTimeZoneUseDST">
+<span class="sig-name descname"><span class="pre">DeviceTimeZoneUseDST</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.12)"><span class="pre">bool</span></a></em><a class="headerlink" href="#verizon_connect_api.api_types.VehicleStatus.DeviceTimeZoneUseDST" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="verizon_connect_api.api_types.VehicleStatus.DisplayState">
+<span class="sig-name descname"><span class="pre">DisplayState</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.12)"><span class="pre">str</span></a></em><a class="headerlink" href="#verizon_connect_api.api_types.VehicleStatus.DisplayState" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="verizon_connect_api.api_types.VehicleStatus.DriverName">
+<span class="sig-name descname"><span class="pre">DriverName</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.12)"><span class="pre">str</span></a><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3/library/constants.html#None" title="(in Python v3.12)"><span class="pre">None</span></a></em><a class="headerlink" href="#verizon_connect_api.api_types.VehicleStatus.DriverName" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="verizon_connect_api.api_types.VehicleStatus.DriverNumber">
+<span class="sig-name descname"><span class="pre">DriverNumber</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.12)"><span class="pre">str</span></a><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3/library/constants.html#None" title="(in Python v3.12)"><span class="pre">None</span></a></em><a class="headerlink" href="#verizon_connect_api.api_types.VehicleStatus.DriverNumber" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="verizon_connect_api.api_types.VehicleStatus.EngineMinutes">
+<span class="sig-name descname"><span class="pre">EngineMinutes</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.12)"><span class="pre">int</span></a></em><a class="headerlink" href="#verizon_connect_api.api_types.VehicleStatus.EngineMinutes" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="verizon_connect_api.api_types.VehicleStatus.IdleTime">
+<span class="sig-name descname"><span class="pre">IdleTime</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.12)"><span class="pre">int</span></a></em><a class="headerlink" href="#verizon_connect_api.api_types.VehicleStatus.IdleTime" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="verizon_connect_api.api_types.VehicleStatus.SensorValues">
+<span class="sig-name descname"><span class="pre">SensorValues</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#list" title="(in Python v3.12)"><span class="pre">list</span></a><span class="p"><span class="pre">[</span></span><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.12)"><span class="pre">str</span></a><span class="p"><span class="pre">]</span></span></em><a class="headerlink" href="#verizon_connect_api.api_types.VehicleStatus.SensorValues" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="verizon_connect_api.api_types.VehicleStatus.Speed">
+<span class="sig-name descname"><span class="pre">Speed</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.12)"><span class="pre">float</span></a></em><a class="headerlink" href="#verizon_connect_api.api_types.VehicleStatus.Speed" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="verizon_connect_api.api_types.VehicleStatus.TractionBatteryChargingLastStartUtc">
+<span class="sig-name descname"><span class="pre">TractionBatteryChargingLastStartUtc</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.12)"><span class="pre">str</span></a><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3/library/constants.html#None" title="(in Python v3.12)"><span class="pre">None</span></a></em><a class="headerlink" href="#verizon_connect_api.api_types.VehicleStatus.TractionBatteryChargingLastStartUtc" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="verizon_connect_api.api_types.VehicleStatus.TractionBatteryChargingUtc">
+<span class="sig-name descname"><span class="pre">TractionBatteryChargingUtc</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.12)"><span class="pre">str</span></a><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3/library/constants.html#None" title="(in Python v3.12)"><span class="pre">None</span></a></em><a class="headerlink" href="#verizon_connect_api.api_types.VehicleStatus.TractionBatteryChargingUtc" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="verizon_connect_api.api_types.VehicleStatus.UpdateUTC">
+<span class="sig-name descname"><span class="pre">UpdateUTC</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.12)"><span class="pre">str</span></a></em><a class="headerlink" href="#verizon_connect_api.api_types.VehicleStatus.UpdateUTC" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="api.html" class="btn btn-neutral float-left" title="API" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright .</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>
